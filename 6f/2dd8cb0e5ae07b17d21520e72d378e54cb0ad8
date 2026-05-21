@@ -1,0 +1,25 @@
+lib/supabase/server.ts
+  s_d81fb0a2071baa::t_a37b26d5f463ac 1-11
+lib/supabase/client.ts
+  s_d81fb0a2071baa::t_6f042340450519 1-10
+__tests__/supabase-types.test.ts
+  s_d81fb0a2071baa::t_d6059f7047c152 1-53
+lib/supabase/types.ts
+  s_d81fb0a2071baa::t_8db2c10a3f3582 1-80
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "6f2dd8cb0e5ae07b17d21520e72d378e54cb0ad8",
+  "prompts": {},
+  "sessions": {
+    "s_d81fb0a2071baa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "84b7723d-1747-480a-a375-2e72318ff389",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
