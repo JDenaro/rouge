@@ -1,0 +1,19 @@
+docs/knowledge/store-analysis.md
+  s_d81fb0a2071baa::t_f224ce79c3cfff 1-508
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "ef9f9e2e92a99c6e12aa385e722395eebc1676c4",
+  "prompts": {},
+  "sessions": {
+    "s_d81fb0a2071baa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "84b7723d-1747-480a-a375-2e72318ff389",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
