@@ -1,0 +1,21 @@
+package.json
+  s_d81fb0a2071baa::t_ed6c7b3de74ae3 9-11
+__tests__/smoke.test.ts
+  s_d81fb0a2071baa::t_6237df2286f2a4 1-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "c46bc46f5c983e43e487986d6844d535a1aa1527",
+  "prompts": {},
+  "sessions": {
+    "s_d81fb0a2071baa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "84b7723d-1747-480a-a375-2e72318ff389",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
