@@ -1,0 +1,43 @@
+app/globals.css
+  s_d81fb0a2071baa::t_62f58f7b9d360f 1
+app/page.tsx
+  s_d81fb0a2071baa::t_d942fda0dc664e 1-3
+public/globe.svg
+  s_d81fb0a2071baa::t_62f58f7b9d360f 1
+postcss.config.mjs
+  s_d81fb0a2071baa::t_62f58f7b9d360f 1-7
+.gitignore
+  s_d81fb0a2071baa::t_62f58f7b9d360f 1-41
+AGENTS.md
+  s_d81fb0a2071baa::t_62f58f7b9d360f 1-5
+eslint.config.mjs
+  s_d81fb0a2071baa::t_62f58f7b9d360f 1-18
+app/layout.tsx
+  s_d81fb0a2071baa::t_62f58f7b9d360f 1-33
+public/file.svg
+  s_d81fb0a2071baa::t_62f58f7b9d360f 1
+package.json
+  s_d81fb0a2071baa::t_62f58f7b9d360f 1-26
+public/window.svg
+  s_d81fb0a2071baa::t_62f58f7b9d360f 1
+next.config.ts
+  s_d81fb0a2071baa::t_62f58f7b9d360f 1-7
+tsconfig.json
+  s_d81fb0a2071baa::t_62f58f7b9d360f 1-34
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "5e4cb06d1285eb92cd3b4f7216d98e0b9bbb053f",
+  "prompts": {},
+  "sessions": {
+    "s_d81fb0a2071baa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "84b7723d-1747-480a-a375-2e72318ff389",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
