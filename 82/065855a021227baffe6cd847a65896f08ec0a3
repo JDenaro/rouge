@@ -1,0 +1,21 @@
+.env.local.example
+  s_d81fb0a2071baa::t_692ba40edb5153 1-19
+.gitignore
+  s_d81fb0a2071baa::t_0c369601833c10 35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "82065855a021227baffe6cd847a65896f08ec0a3",
+  "prompts": {},
+  "sessions": {
+    "s_d81fb0a2071baa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "84b7723d-1747-480a-a375-2e72318ff389",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
