@@ -1,1 +1,85 @@
 @import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-primary:   #C0445A;
+  --color-secondary: #EC4899;
+  --color-accent:    #D97706;
+  --color-bg:        #FDF8F8;
+  --color-fg:        #1A0A0D;
+  --color-surface:   rgba(255, 255, 255, 0.6);
+
+  /* Fonts */
+  --font-heading: 'Cormorant', Georgia, serif;
+  --font-body:    'Montserrat', system-ui, sans-serif;
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px rgba(192, 68, 90, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
+  --shadow-soft: 0 2px 12px rgba(0, 0, 0, 0.06);
+
+  /* Easing & durations */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 180ms;
+  --dur-mid:  320ms;
+  --dur-slow: 500ms;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: var(--color-surface);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-md);
+    background-color: var(--color-primary);
+    color: white;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: background var(--dur-fast) var(--ease-out),
+                transform var(--dur-fast) var(--ease-out);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-1px);
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity var(--dur-slow) var(--ease-out),
+                transform var(--dur-slow) var(--ease-out);
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
