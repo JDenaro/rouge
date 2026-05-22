@@ -41,6 +41,7 @@ export async function CategoriesGrid() {
       </header>
 
       <div
+        className="rouge-categories-grid"
         style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
@@ -130,6 +131,12 @@ export async function CategoriesGrid() {
         }
         .rouge-cat-card:hover .rouge-cat-img {
           transform: scale(1.06);
+        }
+        @media (max-width: 768px) {
+          .rouge-categories-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 0.75rem !important;
+          }
         }
       `}</style>
     </section>

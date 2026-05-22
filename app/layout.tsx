@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Cormorant, Montserrat } from 'next/font/google'
+import { CartProvider } from '@/components/store/CartContext'
 import './globals.css'
 
 const cormorant = Cormorant({
@@ -31,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es" className={`${cormorant.variable} ${montserrat.variable}`}>
       <body style={{ backgroundColor: 'var(--color-bg)', color: 'var(--color-fg)' }}>
-        {children}
+        <CartProvider>{children}</CartProvider>
       </body>
     </html>
   )

@@ -1,6 +1,20 @@
 import Link from 'next/link'
+import { createServerClient } from '@/lib/supabase/server'
 
-export function Hero() {
+async function getHeroImage(): Promise<string> {
+  const supabase = createServerClient()
+  const { data } = await supabase
+    .from('products')
+    .select('images')
+    .in('slug', ['black-ritual-e7n3w', 'brillante', 'dominia-7vjsb'])
+    .eq('active', true)
+    .limit(1)
+  const row = (data as unknown as Array<{ images: string[] }> | null)?.[0]
+  return row?.images?.[0] ?? ''
+}
+
+export async function Hero() {
+  const heroImage = await getHeroImage()
   return (
     <section
       style={{
@@ -17,8 +31,7 @@ export function Hero() {
         style={{
           position: 'absolute',
           inset: 0,
-          backgroundImage:
-            "url('https://acdn-us.mitiendanube.com/stores/004/099/592/products/reina-roja-roja-1-cb476571a3a82fb88317481862828183-1024-1024.webp?w=1200')",
+          backgroundImage: heroImage ? `url('${heroImage}')` : 'linear-gradient(135deg, #C0445A 0%, #EC4899 100%)',
           backgroundSize: 'cover',
           backgroundPosition: 'center 25%',
           filter: 'brightness(0.75)',
