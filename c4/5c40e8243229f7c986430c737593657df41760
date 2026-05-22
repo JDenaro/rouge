@@ -1,0 +1,30 @@
+lib/products.ts
+  s_dfb4f4bf2d506d::t_f29c2e12e3dd44 53-56,58,60-63,72,87-89
+  s_dfb4f4bf2d506d::t_0ded07475f55d7 57
+  s_dfb4f4bf2d506d::t_fac77bdef3a844 59,64-65,68,79-84,86,90-93
+components/store/CategoriesGrid.tsx
+  s_dfb4f4bf2d506d::t_6798e6e31f6243 52-54
+  s_dfb4f4bf2d506d::t_d508ade974777e 2
+  s_dfb4f4bf2d506d::t_a4b9b88aa0d57d 123-137
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "c45c40e8243229f7c986430c737593657df41760",
+  "prompts": {},
+  "humans": {
+    "h_bcaf4f6495f2ae": {
+      "author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  },
+  "sessions": {
+    "s_dfb4f4bf2d506d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab10ac9f-a61a-4c4f-8ddd-4e6d75b06b0f",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
