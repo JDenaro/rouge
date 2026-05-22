@@ -52,6 +52,7 @@ export async function Hero() {
       <div
         style={{
           position: 'relative',
+          zIndex: 1,
           maxWidth: '1200px',
           margin: '0 auto',
           padding: '8rem 1.5rem 6rem',
@@ -142,6 +143,7 @@ export async function Hero() {
       <div
         style={{
           position: 'absolute',
+          zIndex: 0,
           bottom: '2rem',
           left: 0,
           right: 0,
