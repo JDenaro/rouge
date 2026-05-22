@@ -93,6 +93,45 @@
     }
   }
 
+  /* Trust strip below the hero */
+  .rouge-trust-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 0.75rem 1rem;
+  }
+  .rouge-trust-badge {
+    font-family: var(--font-body);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--color-fg);
+    letter-spacing: 0.02em;
+    text-align: center;
+    line-height: 1.35;
+    padding: 0 0.5rem;
+  }
+  @media (min-width: 769px) {
+    .rouge-trust-strip {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0 2.5rem;
+      padding: 1rem 1.5rem;
+    }
+    .rouge-trust-badge {
+      position: relative;
+    }
+    .rouge-trust-badge + .rouge-trust-badge::before {
+      content: '·';
+      color: var(--color-primary);
+      opacity: 0.4;
+      margin-right: 2.5rem;
+      margin-left: -2.5rem;
+      display: inline-block;
+      transform: translateX(-1.25rem);
+    }
+  }
+
   .rouge-whatsapp-fab {
     transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
                 box-shadow 260ms cubic-bezier(0.22, 1, 0.36, 1);
