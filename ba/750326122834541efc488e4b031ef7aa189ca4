@@ -1,0 +1,28 @@
+components/store/Hero.tsx
+  s_dfb4f4bf2d506d::t_8473f9022111da 80,83
+  s_dfb4f4bf2d506d::t_45c8b38210bc86 20,23
+  s_dfb4f4bf2d506d::t_82268a68704940 54
+app/globals.css
+  s_dfb4f4bf2d506d::t_a7ced6230bfefd 86,88-92
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "ba750326122834541efc488e4b031ef7aa189ca4",
+  "prompts": {},
+  "humans": {
+    "h_bcaf4f6495f2ae": {
+      "author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  },
+  "sessions": {
+    "s_dfb4f4bf2d506d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab10ac9f-a61a-4c4f-8ddd-4e6d75b06b0f",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
