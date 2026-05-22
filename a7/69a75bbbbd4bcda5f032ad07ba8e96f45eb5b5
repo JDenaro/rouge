@@ -1,0 +1,48 @@
+scripts/scrape-products.py
+  s_cda0eed622d446::t_7da59789db7a63 1-162
+components/store/CategoriesGrid.tsx
+  s_cda0eed622d446::t_b8211661b8aca1 50-52,73
+  s_cda0eed622d446::t_39c0f57d2ca369 3,5-6
+  s_cda0eed622d446::t_df00806d5cf042 122-123
+components/store/FeaturedProducts.tsx
+  s_cda0eed622d446::t_d19dc288aad4c9 2-10,81-97,100-103,106-117,120-126,128,130-131,134,136-176,179-181,184,188-191,194-197
+package.json
+  s_cda0eed622d446::t_3d304ab05d8efe 33-34
+lib/products.ts
+  s_cda0eed622d446::t_86bb9118ce16ff 18-19,22,24-27
+  s_cda0eed622d446::t_87ba375b60b3b7 39-40,43,45
+  s_cda0eed622d446::t_8283c7c4f93c44 1-17,20-21,23,28-38,41-42,44,46-55
+scripts/enrich-products.py
+  s_cda0eed622d446::t_7cefef07f0d460 54-60
+  s_cda0eed622d446::t_b8307aec114773 1-53,61-116
+scripts/products-enriched.json
+  s_cda0eed622d446::t_43f64fb0caf525 12-20,27-125,127-189,199-207,217-315,325-342,354-407,415-450,462-463,465-521,525-587,604-621,630-656,658-675,678-686,694-756,759-767,775-792,802-828,847-855,858-920,928-936,955-999,1008-1133,1143-1187,1189-1206,1216-1251,1254-1271,1281-1298,1306-1332,1342-1359,1371-1381,1383-1386,1389-1397,1405-1413
+  s_cda0eed622d446::t_04680f4ef2b08e 1-11,21-26,126,190-198,208-216,316-324,343-353,408-414,451-461,464,522-524,588-603,622-629,657,676-677,687-693,757-758,768-774,793-801,829-846,856-857,921-927,937-954,1000-1007,1134-1142,1188,1207-1215,1252-1253,1272-1280,1299-1305,1333-1341,1360-1370,1382,1387-1388,1398-1404,1414-1415
+scripts/seed-products.mjs
+  s_cda0eed622d446::t_f1e000d7477d48 1-13,15-28,30-75
+  s_cda0eed622d446::t_54313f0dee5d81 14
+  s_cda0eed622d446::t_3bc158f5f5a2a4 29
+scripts/products.json
+  s_cda0eed622d446::t_5f6fb14274ed51 1-1298
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "a769a75bbbbd4bcda5f032ad07ba8e96f45eb5b5",
+  "prompts": {},
+  "humans": {
+    "h_bcaf4f6495f2ae": {
+      "author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  },
+  "sessions": {
+    "s_cda0eed622d446": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b1e34155-d3c1-447a-88b1-8127f2f487b1",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
