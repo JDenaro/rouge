@@ -1,0 +1,34 @@
+app/(store)/producto/[slug]/page.tsx
+  s_cda0eed622d446::t_cd16e1edf3787b 5
+  s_cda0eed622d446::t_8e04e1a101ec33 269
+  s_cda0eed622d446::t_c2cb4bd602b7cd 67-70,74-77
+components/store/Footer.tsx
+  s_cda0eed622d446::t_52e259de47d758 139,143,148-149
+app/(store)/[category]/page.tsx
+  s_cda0eed622d446::t_9a631495836d84 55-58,62-65
+app/(store)/productos/page.tsx
+  s_cda0eed622d446::t_c8e36708c20971 155,158-161
+components/store/ProductGrid.tsx
+  s_cda0eed622d446::t_52d3963503c055 23-28,37-38,41-43,52
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "c54e3cec9de36e8b7ea7147cb5a6d0769ece1aa9",
+  "prompts": {},
+  "humans": {
+    "h_bcaf4f6495f2ae": {
+      "author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  },
+  "sessions": {
+    "s_cda0eed622d446": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b1e34155-d3c1-447a-88b1-8127f2f487b1",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
