@@ -1,0 +1,24 @@
+scripts/e2e-verify.py
+  s_cda0eed622d446::t_e98860a4c9992f 1-125
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "bd065fea515109d98c3a60c27de94af0d16c7e21",
+  "prompts": {},
+  "humans": {
+    "h_bcaf4f6495f2ae": {
+      "author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  },
+  "sessions": {
+    "s_cda0eed622d446": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b1e34155-d3c1-447a-88b1-8127f2f487b1",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
