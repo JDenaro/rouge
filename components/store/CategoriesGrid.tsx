@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { categories } from '@/lib/mock-data'
+import { categories, formatARS } from '@/lib/mock-data'
 import { getCategoryThumbnails } from '@/lib/products'
 
 export async function CategoriesGrid() {
@@ -49,7 +49,9 @@ export async function CategoriesGrid() {
         }}
       >
         {categories.map((cat) => {
-          const image = thumbnails[cat.slug] || cat.image
+          const meta = thumbnails[cat.slug]
+          const image = meta?.image || cat.image
+          const minPrice = meta?.minPrice
           return (
           <Link
             key={cat.slug}
@@ -118,6 +120,21 @@ export async function CategoriesGrid() {
               >
                 {cat.description}
               </p>
+              {minPrice !== undefined && (
+                <p
+                  style={{
+                    fontFamily: 'var(--font-body)',
+                    fontSize: '0.75rem',
+                    margin: '0.375rem 0 0',
+                    opacity: 0.95,
+                    letterSpacing: '0.04em',
+                    textTransform: 'uppercase',
+                    fontWeight: 600,
+                  }}
+                >
+                  Desde {formatARS(minPrice)}
+                </p>
+              )}
             </div>
           </Link>
           )

@@ -50,24 +50,47 @@ export async function getFeaturedProducts(): Promise<Product[]> {
   )
 }
 
+// Image filename fragments to exclude — products whose photos have promotional/text
+// watermarks baked in and look out of place as category thumbnails.
+const THUMBNAIL_EXCLUDED_IMAGE_PATTERNS = [
+  'captura-de-pantalla-2023-11-16-105109', // "It's magic!" glitter body oil
+  'imagen-de-whatsapp-2024-11-21-a-las-10-33-17', // "Felices Fiestas" promo
+]
+
+function isExcludedImage(url: string): boolean {
+  return THUMBNAIL_EXCLUDED_IMAGE_PATTERNS.some((p) => url.includes(p))
+}
+
+export type CategoryMeta = { image: string; minPrice: number }
+
 export async function getCategoryThumbnails(
   slugs: readonly string[],
-): Promise<Record<string, string>> {
+): Promise<Record<string, CategoryMeta>> {
   const supabase = createServerClient()
   const { data, error } = await supabase
     .from('products')
-    .select('category, images')
+    .select('category, images, price')
     .in('category', slugs as string[])
     .eq('active', true)
   if (error || !data) {
     if (error) console.error('getCategoryThumbnails:', error)
     return {}
   }
-  const rows = data as unknown as Array<{ category: string; images: string[] }>
-  const result: Record<string, string> = {}
+  const rows = data as unknown as Array<{
+    category: string
+    images: string[]
+    price: number
+  }>
+  const result: Record<string, CategoryMeta> = {}
   for (const row of rows) {
-    if (!result[row.category] && row.images?.[0]) {
-      result[row.category] = row.images[0]
+    const existing = result[row.category]
+    const firstImage = row.images?.[0]
+    if (!existing && firstImage && !isExcludedImage(firstImage)) {
+      result[row.category] = { image: firstImage, minPrice: row.price }
+    } else if (existing && typeof row.price === 'number') {
+      if (row.price < existing.minPrice) {
+        result[row.category] = { ...existing, minPrice: row.price }
+      }
     }
   }
   return result
