@@ -1,0 +1,97 @@
+components/store/CartContext.tsx
+  s_cda0eed622d446::t_6bb258dfb28ae5 1-123
+app/(admin)/admin/login/page.tsx
+  s_cda0eed622d446::t_07b64b632f9e5c 1-62
+app/(admin)/admin/login/actions.ts
+  s_cda0eed622d446::t_e04343ba80748f 1-39
+app/(store)/politica-de-cambios/page.tsx
+  s_cda0eed622d446::t_b653c865328e59 1-189
+lib/products.ts
+  s_cda0eed622d446::t_90756ffefa61d1 2,11-34,76-152
+app/(admin)/admin/ordenes/actions.ts
+  s_cda0eed622d446::t_c0b8a27d3d1f8e 1-23
+app/(store)/contacto/page.tsx
+  s_cda0eed622d446::t_910043bba47882 1-218
+app/(admin)/admin/productos/ProductRow.tsx
+  s_cda0eed622d446::t_f9f185d02f2401 1-184
+lib/auth.ts
+  s_cda0eed622d446::t_0d5e7e1627471a 1-44
+components/store/ProductGrid.tsx
+  s_cda0eed622d446::t_ec9c8ac6f99ac1 1-56
+app/(store)/productos/page.tsx
+  s_cda0eed622d446::t_070d87c9d07894 1-196
+components/store/Nav.tsx
+  s_cda0eed622d446::t_41f2abb4b9ac5b 5,16-25,28-29,38-44,46-47,49-58,61,63-65,68-69,74-76,78,90-91,94-205,207,209-324,326,329-331,334
+app/(store)/layout.tsx
+  s_cda0eed622d446::t_b00d5a551bbe5e 3,11
+middleware.ts
+  s_cda0eed622d446::t_594a257ad1ee40 1-27
+app/(store)/checkout/CheckoutForm.tsx
+  s_cda0eed622d446::t_2fcc417286fc39 1-323
+app/layout.tsx
+  s_cda0eed622d446::t_ee9d1a1f3968ac 3,35
+app/(store)/checkout/actions.ts
+  s_cda0eed622d446::t_83c8e7837bc91c 38-58
+  s_cda0eed622d446::t_f3d0bcea234a63 1-37,59-69
+app/(admin)/admin/productos/page.tsx
+  s_cda0eed622d446::t_40534490769941 1-69
+components/store/CartDrawer.tsx
+  s_cda0eed622d446::t_4f4dcdf6e3beed 1-322
+app/(admin)/admin/ordenes/OrderRow.tsx
+  s_cda0eed622d446::t_6b1156d93829f7 1-174
+lib/admin-data.ts
+  s_cda0eed622d446::t_b2b72058aa8017 1-60
+app/(admin)/admin/page.tsx
+  s_cda0eed622d446::t_19ed97318194a9 1-11,13-24,26-160,165-191
+app/(store)/checkout/confirmacion/page.tsx
+  s_cda0eed622d446::t_da0c1e49b32a40 1-206
+app/(store)/guia-de-talles/page.tsx
+  s_cda0eed622d446::t_cc5c1662e8d098 1-227
+components/store/ProductCard.tsx
+  s_cda0eed622d446::t_0ae6738615a608 1-108
+app/(admin)/admin/login/LoginForm.tsx
+  s_cda0eed622d446::t_bedbc8376943b8 1-89
+app/(admin)/admin/ordenes/page.tsx
+  s_cda0eed622d446::t_813bd309c53170 1-76
+app/(admin)/layout.tsx
+  s_cda0eed622d446::t_4e43ea05d8a206 2
+components/store/CategoriesGrid.tsx
+  s_cda0eed622d446::t_7cfc39d50e7e9a 135-140
+  s_cda0eed622d446::t_6f9e8bfcfc0638 44
+app/(store)/[category]/page.tsx
+  s_cda0eed622d446::t_9f30cb0b8984be 1-109
+app/(store)/producto/[slug]/page.tsx
+  s_cda0eed622d446::t_20cdfb6e4bd908 1-288
+components/store/Hero.tsx
+  s_cda0eed622d446::t_efab9c263409e8 2,4-17
+  s_cda0eed622d446::t_4de81c3bab7fa3 34
+app/(admin)/admin/productos/actions.ts
+  s_cda0eed622d446::t_f6f3a8f16adbda 1-31
+app/(store)/checkout/page.tsx
+  s_cda0eed622d446::t_e46f379f8b4b8c 1-48
+components/admin/AdminShell.tsx
+  s_cda0eed622d446::t_a97772a79cba79 1-115
+components/store/AddToCart.tsx
+  s_cda0eed622d446::t_c5212e2cb2feab 1-203
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "29607bec7022132d45a15d5d0ce7308ee34334a0",
+  "prompts": {},
+  "humans": {
+    "h_bcaf4f6495f2ae": {
+      "author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  },
+  "sessions": {
+    "s_cda0eed622d446": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b1e34155-d3c1-447a-88b1-8127f2f487b1",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
