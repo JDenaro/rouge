@@ -137,6 +137,7 @@ export function Nav() {
               type="button"
               aria-label={`Carrito (${count} productos)`}
               onClick={openCart}
+              className="rouge-cart-btn"
               style={{
                 position: 'relative',
                 display: 'inline-flex',
@@ -323,6 +324,13 @@ export function Nav() {
         .rouge-nav-link:hover::after {
           transform: scaleX(1);
           transform-origin: left;
+        }
+        .rouge-cart-btn {
+          transition: color 180ms cubic-bezier(0.22, 1, 0.36, 1), transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .rouge-cart-btn:hover {
+          color: var(--color-primary) !important;
+          transform: scale(1.15);
         }
         @media (max-width: 768px) {
           .rouge-nav-desktop {
