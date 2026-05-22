@@ -118,13 +118,13 @@ export function Nav() {
               <Link
                 key={link.href}
                 href={link.href}
+                className="rouge-nav-link"
                 style={{
                   fontFamily: 'var(--font-body)',
                   fontSize: '0.875rem',
                   fontWeight: 500,
                   color: 'var(--color-fg)',
                   textDecoration: 'none',
-                  transition: 'color var(--dur-fast) var(--ease-out)',
                 }}
               >
                 {link.label}
@@ -300,6 +300,29 @@ export function Nav() {
         @keyframes rouge-slide-in {
           from { transform: translateX(-100%); }
           to { transform: translateX(0); }
+        }
+        .rouge-nav-link {
+          position: relative;
+        }
+        .rouge-nav-link::after {
+          content: '';
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          width: 100%;
+          height: 1.5px;
+          background: var(--color-primary);
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .rouge-nav-link:hover {
+          color: var(--color-primary) !important;
+          transition: color 180ms cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .rouge-nav-link:hover::after {
+          transform: scaleX(1);
+          transform-origin: left;
         }
         @media (max-width: 768px) {
           .rouge-nav-desktop {
