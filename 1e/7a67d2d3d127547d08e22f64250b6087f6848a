@@ -1,0 +1,40 @@
+components/store/Hero.tsx
+  s_cda0eed622d446::t_f0b8d968380e75 1-172
+app/(store)/layout.tsx
+  s_cda0eed622d446::t_955ac8771393fc 1-3,7,9
+app/(store)/page.tsx
+  s_cda0eed622d446::t_753847e7eaafab 1-5,8-13
+components/store/CategoriesGrid.tsx
+  s_cda0eed622d446::t_ff8450bb396ae6 1-132
+components/store/HowItWorks.tsx
+  s_cda0eed622d446::t_388fda2b6d3e6b 1-187
+components/store/FeaturedProducts.tsx
+  s_cda0eed622d446::t_3d38ef5f6eac00 1-201
+components/store/Nav.tsx
+  s_cda0eed622d446::t_e8b470f1ab54bb 1-157
+lib/mock-data.ts
+  s_cda0eed622d446::t_7f8e7be6530de8 1-91
+components/store/Footer.tsx
+  s_cda0eed622d446::t_0396d66c033c89 1-148
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "1e7a67d2d3d127547d08e22f64250b6087f6848a",
+  "prompts": {},
+  "humans": {
+    "h_bcaf4f6495f2ae": {
+      "author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  },
+  "sessions": {
+    "s_cda0eed622d446": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b1e34155-d3c1-447a-88b1-8127f2f487b1",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
