@@ -83,6 +83,12 @@
     transform: translateY(0);
   }
 
+  @media (max-width: 768px) {
+    .rouge-hero-badges {
+      display: none;
+    }
+  }
+
   .rouge-whatsapp-fab {
     transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
                 box-shadow 260ms cubic-bezier(0.22, 1, 0.36, 1);

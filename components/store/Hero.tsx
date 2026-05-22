@@ -139,8 +139,9 @@ export async function Hero() {
         </div>
       </div>
 
-      {/* Floating badges row */}
+      {/* Floating badges row — hidden on mobile to avoid overlapping CTAs */}
       <div
+        className="rouge-hero-badges"
         style={{
           position: 'absolute',
           zIndex: 0,
