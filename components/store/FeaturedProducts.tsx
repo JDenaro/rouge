@@ -58,13 +58,15 @@ export async function FeaturedProducts() {
           <Link
             href="/productos"
             style={{
+              display: 'inline-block',
               fontFamily: 'var(--font-body)',
               fontSize: '0.875rem',
               fontWeight: 500,
               color: 'var(--color-primary)',
               textDecoration: 'none',
+              padding: '0.5rem 0',
               borderBottom: '1px solid var(--color-primary)',
-              paddingBottom: '2px',
+              lineHeight: 1.5,
             }}
           >
             Ver todo →
