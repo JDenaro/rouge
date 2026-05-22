@@ -145,7 +145,9 @@ const footerLink: React.CSSProperties = {
   fontSize: '0.875rem',
   color: 'rgba(253, 248, 248, 0.75)',
   textDecoration: 'none',
-  padding: '0.5rem 0',
+  padding: '0.5rem 0.25rem',
+  margin: '0 -0.25rem',
+  minWidth: '44px',
   lineHeight: 1.5,
   transition: 'color var(--dur-fast) var(--ease-out)',
 }
