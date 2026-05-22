@@ -1,0 +1,1298 @@
+[
+  {
+    "slug": "productos",
+    "name": "Ver todos los productos",
+    "category": "sets",
+    "price": null,
+    "image": "",
+    "url": "https://rougeintime.ar/productos/"
+  },
+  {
+    "slug": "enamorada",
+    "name": "Enamorada",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-11-07-095337-1d0fbfefc6d2743f5717625219024461-240-0.webp",
+    "url": "https://rougeintime.ar/productos/enamorada/"
+  },
+  {
+    "slug": "nina",
+    "name": "Nina",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2023-12-29-155031-167d7776fbcf5b7c5417038758293395-240-0.webp",
+    "url": "https://rougeintime.ar/productos/nina/"
+  },
+  {
+    "slug": "rufle",
+    "name": "Rufle",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/4475efb3-9323-42dd-8f81-1ca0f55976f4-20103cb0020f83010f17056874273540-240-0.webp",
+    "url": "https://rougeintime.ar/productos/rufle/"
+  },
+  {
+    "slug": "turin",
+    "name": "Turin",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/737e4261-9e2b-4df8-bc11-78f03a87b6f5-c23d062b31184304bc17441643961794-240-0.webp",
+    "url": "https://rougeintime.ar/productos/turin/"
+  },
+  {
+    "slug": "mienteme",
+    "name": "Mienteme",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-07-29-105812-cae7e9cf1eeb61e49017222615058717-240-0.webp",
+    "url": "https://rougeintime.ar/productos/mienteme/"
+  },
+  {
+    "slug": "megan-two",
+    "name": "Megan Two",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/3664a95e-907d-439d-ad58-8f257dd63adb-9a3f0d8bab9b024cf917049302032147-240-0.webp",
+    "url": "https://rougeintime.ar/productos/megan-two/"
+  },
+  {
+    "slug": "femme-fatale-two",
+    "name": "Femme Fatale Two",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-11-07-102022-6847e4a3d67b137b8417625216488040-240-0.webp",
+    "url": "https://rougeintime.ar/productos/femme-fatale-two/"
+  },
+  {
+    "slug": "venus-dew",
+    "name": "Venus Dew",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-05-06-094207-c0d1ca03158460ac0617465356199235-240-0.webp",
+    "url": "https://rougeintime.ar/productos/venus-dew/"
+  },
+  {
+    "slug": "brillante",
+    "name": "Brillante",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/56103424-8eaa-4d0c-aa1c-a57a40887e46-6db364630efffc4d6717233021116078-240-0.webp",
+    "url": "https://rougeintime.ar/productos/brillante/"
+  },
+  {
+    "slug": "amaia",
+    "name": "Amaia",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/661c5777-d224-4579-af6a-fdc9a233d594-3fe7aea3b62edca46117114619251622-240-0.webp",
+    "url": "https://rougeintime.ar/productos/amaia/"
+  },
+  {
+    "slug": "ursula",
+    "name": "Ursula",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/4f9167f4-71d3-4631-9cb1-edf44e269c7f-a207713f31b561ba1b17473254232977-240-0.webp",
+    "url": "https://rougeintime.ar/productos/ursula/"
+  },
+  {
+    "slug": "pink",
+    "name": "Pink",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/a8b8aec8-c574-44c2-86cd-a90b00c83084-e6db5ef5c04fcde6ef17038847299865-240-0.webp",
+    "url": "https://rougeintime.ar/productos/pink/"
+  },
+  {
+    "slug": "excluisivo",
+    "name": "Excluisivo",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/74d7b280-4a70-4a4d-b963-82b11342a491-e52ebd20d69be6442217098952890766-240-0.webp",
+    "url": "https://rougeintime.ar/productos/excluisivo/"
+  },
+  {
+    "slug": "angel",
+    "name": "Angel",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/ce15a30b-e75e-44d6-a052-a80d0f2e759b-189285e49f1ff21eaa17046069913339-240-0.webp",
+    "url": "https://rougeintime.ar/productos/angel/"
+  },
+  {
+    "slug": "terni",
+    "name": "Terni",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/8eda9352-3396-48f8-bfbe-451661826fe7-7f743d3ab1ebe5013117429974393919-240-0.webp",
+    "url": "https://rougeintime.ar/productos/terni/"
+  },
+  {
+    "slug": "implicite",
+    "name": "Implicite",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/94f8e348-0cbf-4d52-9e30-39f7ba273113-b4bf43c1a47d31023017131899341959-240-0.webp",
+    "url": "https://rougeintime.ar/productos/implicite/"
+  },
+  {
+    "slug": "dakota",
+    "name": "Dakota",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/aeb221d5-6cdd-4048-bb7e-daf221c191f1-361faac88494a13abb17046137568746-240-0.webp",
+    "url": "https://rougeintime.ar/productos/dakota/"
+  },
+  {
+    "slug": "harley",
+    "name": "Harley",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/a33fe1ed-4cf1-4e04-83ad-a5ee139e4a35-4eda047ff4afb78cba17116348205167-240-0.webp",
+    "url": "https://rougeintime.ar/productos/harley/"
+  },
+  {
+    "slug": "caen",
+    "name": "Caen",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/img_3962-d64c742f43d3622b7d17567333360758-240-0.webp",
+    "url": "https://rougeintime.ar/productos/caen/"
+  },
+  {
+    "slug": "lujuria-intima",
+    "name": "Lujuria Intima",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/b08b386f-090d-46d0-a9fa-d4ec2d7be9a6-728d3098ae746b41ab17038823115755-240-0.webp",
+    "url": "https://rougeintime.ar/productos/lujuria-intima/"
+  },
+  {
+    "slug": "sarky",
+    "name": "Sarky",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/5f6964e8-1f64-4540-bdc0-0f5f1cc254a3-79eb9f6f96aa5f6c7317046079600745-240-0.webp",
+    "url": "https://rougeintime.ar/productos/sarky/"
+  },
+  {
+    "slug": "lujuria-intima-en-vinilo",
+    "name": "Lujuria Intima En Vinilo",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-07-29-100433-f457aa9b1bd6f7740117222590769382-240-0.webp",
+    "url": "https://rougeintime.ar/productos/lujuria-intima-en-vinilo/"
+  },
+  {
+    "slug": "lujuria-intima1",
+    "name": "Lujuria Intima1",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-07-29-100240-e045c7b62be785bf7617222585781144-240-0.webp",
+    "url": "https://rougeintime.ar/productos/lujuria-intima1/"
+  },
+  {
+    "slug": "cleopatra",
+    "name": "Cleopatra",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/img_4425-78337f32022dec3d5017576784223239-240-0.webp",
+    "url": "https://rougeintime.ar/productos/cleopatra/"
+  },
+  {
+    "slug": "pink-me",
+    "name": "Pink Me",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/5e7f5d14-ba91-4f20-a5f3-8e971c733a28-181ad8c2d02feeee0617099365229902-240-0.webp",
+    "url": "https://rougeintime.ar/productos/pink-me/"
+  },
+  {
+    "slug": "flocked",
+    "name": "Flocked",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/a2560431-3e29-479e-80ac-a3786254c229-95a1e9fb0f9fc2eee917086102834130-240-0.webp",
+    "url": "https://rougeintime.ar/productos/flocked/"
+  },
+  {
+    "slug": "viuda-negra1",
+    "name": "Viuda Negra1",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-07-29-100426-31a445ab50fe339fc417222591700448-240-0.webp",
+    "url": "https://rougeintime.ar/productos/viuda-negra1/"
+  },
+  {
+    "slug": "cleopatra1",
+    "name": "Cleopatra1",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/img_4425-bcbb99b33ebcef412d17576788613168-240-0.webp",
+    "url": "https://rougeintime.ar/productos/cleopatra1/"
+  },
+  {
+    "slug": "pijamas-para-pareja-3",
+    "name": "Pijamas Para Pareja 3",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-02-24-003656-7af59b1a15fd77821c17403682900739-240-0.webp",
+    "url": "https://rougeintime.ar/productos/pijamas-para-pareja-3/"
+  },
+  {
+    "slug": "https-www-rougeintime-ar",
+    "name": "Https Www Rougeintime Ar",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-02-24-001033-7f741bbec0fb1c1fab17403666937521-240-0.webp",
+    "url": "https://rougeintime.ar/productos/https-www-rougeintime-ar/"
+  },
+  {
+    "slug": "the-rouge-box",
+    "name": "The Rouge Box",
+    "category": "sets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-01-13-090341-bd7d15b27980d0b31117367701658158-240-0.webp",
+    "url": "https://rougeintime.ar/productos/the-rouge-box/"
+  },
+  {
+    "slug": "policia-two",
+    "name": "Policia Two",
+    "category": "sets",
+    "price": null,
+    "image": "https://acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-09-10-142518-780c20fcbb8c59b08b17575351330052-640-0.webp",
+    "url": "https://rougeintime.ar/productos/policia-two/"
+  },
+  {
+    "slug": "laverinto-de-lujuria",
+    "name": "Laverinto De Lujuria",
+    "category": "sets",
+    "price": null,
+    "image": "https://acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-05-06-090954-601cce919f3cbb816f17465339137644-640-0.png",
+    "url": "https://rougeintime.ar/productos/laverinto-de-lujuria/"
+  },
+  {
+    "slug": "gatubela-2",
+    "name": "Gatubela 2",
+    "category": "sets",
+    "price": null,
+    "image": "https://acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-07-29-105520-59b700144c7954f3ea17222613568640-640-0.png",
+    "url": "https://rougeintime.ar/productos/gatubela-2/"
+  },
+  {
+    "slug": "badgirl",
+    "name": "1",
+    "category": "sets",
+    "price": null,
+    "image": "https://acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-11-07-095409-6fc345801487bebdfd17625200635936-1024-1024.png",
+    "url": "https://rougeintime.ar/productos/badgirl/"
+  },
+  {
+    "slug": "extasis",
+    "name": "3",
+    "category": "sets",
+    "price": null,
+    "image": "https://acdn-us.mitiendanube.com/stores/004/099/592/products/35c21dbf-688d-4279-8f92-8a72b07c2eda-045d4cf1fd7019354317169231601594-1024-1024.jpeg",
+    "url": "https://rougeintime.ar/productos/extasis/"
+  },
+  {
+    "slug": "asi-soy-yo",
+    "name": "5",
+    "category": "sets",
+    "price": null,
+    "image": "https://acdn-us.mitiendanube.com/stores/004/099/592/products/72158582-b682-43ae-b60e-da513508d2ce-c147f5d4a82a5f54f417046062642063-1024-1024.jpeg",
+    "url": "https://rougeintime.ar/productos/asi-soy-yo/"
+  },
+  {
+    "slug": "pizzo-seducente",
+    "name": "6",
+    "category": "sets",
+    "price": null,
+    "image": "https://acdn-us.mitiendanube.com/stores/004/099/592/products/3c2fe3ed-514b-4945-8257-92c5999a42b1-3707dbb8b31dc90ed617038836838488-1024-1024.jpeg",
+    "url": "https://rougeintime.ar/productos/pizzo-seducente/"
+  },
+  {
+    "slug": "innocent-desire",
+    "name": "7",
+    "category": "sets",
+    "price": null,
+    "image": "https://acdn-us.mitiendanube.com/stores/004/099/592/products/f81ea240-c2dc-4b80-8939-c6ea000df330-3530f714fbdfa57e6317046065711543-1024-1024.jpeg",
+    "url": "https://rougeintime.ar/productos/innocent-desire/"
+  },
+  {
+    "slug": "saludo-virtual",
+    "name": "8",
+    "category": "sets",
+    "price": null,
+    "image": "https://acdn-us.mitiendanube.com/stores/004/099/592/products/producto-virtual-fc07e07858cee03f1517038865925343-1024-1024.jpg",
+    "url": "https://rougeintime.ar/productos/saludo-virtual/"
+  },
+  {
+    "slug": "toronto",
+    "name": "Toronto",
+    "category": "baby-doll",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/843b6fde-f42f-4445-927f-b377719e9afa-fe9335ec2b9195093b17157756545693-240-0.webp",
+    "url": "https://rougeintime.ar/productos/toronto/"
+  },
+  {
+    "slug": "rose",
+    "name": "Rose",
+    "category": "baby-doll",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/a7ba69e4-09e8-4386-bc4d-41c996bb7d80-2a256c5acc5b4ea71617046068366769-240-0.webp",
+    "url": "https://rougeintime.ar/productos/rose/"
+  },
+  {
+    "slug": "gatubela-3",
+    "name": "Gatubela 3",
+    "category": "baby-doll",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/3bb8c87a-9d92-44e4-8e97-2699edee5c43-fe93a6ed4f97d0999117417989158006-240-0.webp",
+    "url": "https://rougeintime.ar/productos/gatubela-3/"
+  },
+  {
+    "slug": "rubi",
+    "name": "Rubi",
+    "category": "baby-doll",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/140aab4a-dafe-41fc-8c20-bcafcc2783dc-fd9bc7048b8d965d7d17114615474647-240-0.webp",
+    "url": "https://rougeintime.ar/productos/rubi/"
+  },
+  {
+    "slug": "mora",
+    "name": "Mora",
+    "category": "baby-doll",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/6a478cd3-16c8-4469-9ad6-f99fe10885c8-6e62f587de9461a2ba17362600620830-240-0.webp",
+    "url": "https://rougeintime.ar/productos/mora/"
+  },
+  {
+    "slug": "sauvage",
+    "name": "Sauvage",
+    "category": "baby-doll",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-09-12-164725-d4af7371261014798a17261705294897-240-0.webp",
+    "url": "https://rougeintime.ar/productos/sauvage/"
+  },
+  {
+    "slug": "gatubela",
+    "name": "Gatubela",
+    "category": "baby-doll",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/bd764efd-e746-4195-8ad4-62dab7a50144-21363ed2c68911563417064666745388-240-0.webp",
+    "url": "https://rougeintime.ar/productos/gatubela/"
+  },
+  {
+    "slug": "jade-1ww48",
+    "name": "Jade 1Ww48",
+    "category": "baby-doll",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2026-03-12-083359-55cd73f149b079b31017733153038191-240-0.webp",
+    "url": "https://rougeintime.ar/productos/jade-1ww48/"
+  },
+  {
+    "slug": "anita",
+    "name": "Anita",
+    "category": "baby-doll",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/3a481bcb-f3af-4625-b3cc-dd66dafa1c05-a00a0a8830d20994d117424915920733-240-0.webp",
+    "url": "https://rougeintime.ar/productos/anita/"
+  },
+  {
+    "slug": "rouge",
+    "name": "Rouge",
+    "category": "baby-doll",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-09-16-164347-62ac5085caaa27721217265158492462-240-0.webp",
+    "url": "https://rougeintime.ar/productos/rouge/"
+  },
+  {
+    "slug": "rockstar",
+    "name": "Rockstar",
+    "category": "baby-doll",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/2ecb5cf2-b937-4d49-b86e-151f7f4b0a34-9a58a77d41eacc783a17371210114131-240-0.webp",
+    "url": "https://rougeintime.ar/productos/rockstar/"
+  },
+  {
+    "slug": "medusa",
+    "name": "Medusa",
+    "category": "conjuntos",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/631c77ee-aef2-4f7e-ab39-bd82654c5e60-6bc4469b812a837b9017038844322122-240-0.webp",
+    "url": "https://rougeintime.ar/productos/medusa/"
+  },
+  {
+    "slug": "rachel",
+    "name": "Rachel",
+    "category": "conjuntos",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/15e347b1-bd92-4293-9724-92c6867f800a-9047a9042b4810cb1017073175193289-240-0.webp",
+    "url": "https://rougeintime.ar/productos/rachel/"
+  },
+  {
+    "slug": "aitana",
+    "name": "Aitana",
+    "category": "conjuntos",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/cdb955a4-0c84-4332-b8c6-abc84f6de0e1-6782840375f073e79d17046094303444-240-0.webp",
+    "url": "https://rougeintime.ar/productos/aitana/"
+  },
+  {
+    "slug": "london",
+    "name": "London",
+    "category": "conjuntos",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/c29dfff5-01dd-4261-b7cc-196cab5b9840-70a44dfa687d09195917416111136656-240-0.webp",
+    "url": "https://rougeintime.ar/productos/london/"
+  },
+  {
+    "slug": "sensualite",
+    "name": "Sensualite",
+    "category": "conjuntos",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/e8828bf6-706a-4737-b71a-2135ba3d9aa5-5dfc4a079fb23f04bc17046139320137-240-0.webp",
+    "url": "https://rougeintime.ar/productos/sensualite/"
+  },
+  {
+    "slug": "conjunto-soy-tu-put",
+    "name": "Conjunto Soy Tu Put",
+    "category": "conjuntos",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/ce638ad8-7f5c-4e18-8a71-72714940ea34-6649712793a0a67a5d17368845309020-240-0.webp",
+    "url": "https://rougeintime.ar/productos/conjunto-soy-tu-put/"
+  },
+  {
+    "slug": "two-love",
+    "name": "Two Love",
+    "category": "conjuntos",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/509a04f4-4fe4-4367-832c-7f9d389ebc89-f9cfece85af791c19c17052501521376-240-0.webp",
+    "url": "https://rougeintime.ar/productos/two-love/"
+  },
+  {
+    "slug": "polic1",
+    "name": "Polic1",
+    "category": "conjuntos",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/cbcd0351-ac3d-4716-8614-121ddd30b80a-7536946ce9f93a7a4d17260773918456-240-0.webp",
+    "url": "https://rougeintime.ar/productos/polic1/"
+  },
+  {
+    "slug": "universo",
+    "name": "Universo",
+    "category": "conjuntos",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/fda7bcde-acc8-4338-9026-37b56391f080-d37649f27bc58f527817086978610955-240-0.webp",
+    "url": "https://rougeintime.ar/productos/universo/"
+  },
+  {
+    "slug": "pink-flou",
+    "name": "Pink Flou",
+    "category": "conjuntos",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/a13ddddf-d73e-4b5f-96a9-88cf01fd5151-e67c14d65ea9814d8217038832357753-240-0.webp",
+    "url": "https://rougeintime.ar/productos/pink-flou/"
+  },
+  {
+    "slug": "deseo-prohibido",
+    "name": "Deseo Prohibido",
+    "category": "conjuntos",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-09-12-162454-fbb6c040e70953d10217261692167506-240-0.webp",
+    "url": "https://rougeintime.ar/productos/deseo-prohibido/"
+  },
+  {
+    "slug": "lovers",
+    "name": "Lovers",
+    "category": "conjuntos",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/f83c232d-18ed-4ca4-a617-05e5ff2ca6f5-7e8ed6c5e6319886dc17096457349118-240-0.webp",
+    "url": "https://rougeintime.ar/productos/lovers/"
+  },
+  {
+    "slug": "mors-z1l4k",
+    "name": "Mors Z1L4K",
+    "category": "conjuntos",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2026-04-13-091322-597f1cec8f29d7d13917760824684917-240-0.webp",
+    "url": "https://rougeintime.ar/productos/mors-z1l4k/"
+  },
+  {
+    "slug": "black-ritual-e7n3w",
+    "name": "Black Ritual E7N3W",
+    "category": "conjuntos",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2026-01-14-161053-44f32c04f677d0e58017684178752633-240-0.webp",
+    "url": "https://rougeintime.ar/productos/black-ritual-e7n3w/"
+  },
+  {
+    "slug": "amame-en-encaje",
+    "name": "Amame En Encaje",
+    "category": "body",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-11-07-101931-0c0aa4cf3ddbdc202817625215926344-240-0.webp",
+    "url": "https://rougeintime.ar/productos/amame-en-encaje/"
+  },
+  {
+    "slug": "atraccion-irresistible",
+    "name": "Atraccion Irresistible",
+    "category": "body",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/e98364f6-790a-4b4c-80d5-e4157708f16b-df4f3dbc4ea386fa5617038807655321-240-0.webp",
+    "url": "https://rougeintime.ar/productos/atraccion-irresistible/"
+  },
+  {
+    "slug": "york",
+    "name": "York",
+    "category": "body",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/6094a66c-a424-4df8-b8d2-67a378b82f75-0f599b62f5c1ddbe9317149450227942-240-0.webp",
+    "url": "https://rougeintime.ar/productos/york/"
+  },
+  {
+    "slug": "scarlet",
+    "name": "Scarlet",
+    "category": "body",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/3c5d021a-d070-4984-a08c-0964ce85c003-23b9d4f3de3f18c10617308995334745-240-0.webp",
+    "url": "https://rougeintime.ar/productos/scarlet/"
+  },
+  {
+    "slug": "wanda",
+    "name": "Wanda",
+    "category": "body",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/81c25f61-38e3-4336-9b65-8bbc2af152c4-81a61c6f7ddc9c35f417038830199571-240-0.webp",
+    "url": "https://rougeintime.ar/productos/wanda/"
+  },
+  {
+    "slug": "aqua",
+    "name": "Aqua",
+    "category": "body",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/6f9a4acd-3376-4652-87d7-7c2657d610bb-2b1fb278f28669b8e417049032553393-240-0.webp",
+    "url": "https://rougeintime.ar/productos/aqua/"
+  },
+  {
+    "slug": "shaving",
+    "name": "Shaving",
+    "category": "body",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/d7337288-435c-4ca0-a941-fbf0a4179aeb-bd197d3cd3922abb5e17046090239280-240-0.webp",
+    "url": "https://rougeintime.ar/productos/shaving/"
+  },
+  {
+    "slug": "tabu",
+    "name": "Tabu",
+    "category": "body",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-05-06-092044-493441d0cd7ffe2d7f17465342070501-240-0.webp",
+    "url": "https://rougeintime.ar/productos/tabu/"
+  },
+  {
+    "slug": "fiamma-di-passione",
+    "name": "Fiamma Di Passione",
+    "category": "body",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-09-12-163248-c12b9ec5007904002417261695869324-240-0.webp",
+    "url": "https://rougeintime.ar/productos/fiamma-di-passione/"
+  },
+  {
+    "slug": "black",
+    "name": "Black",
+    "category": "body",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2023-12-19-104304-413e6f195a19f3900417038770561223-240-0.webp",
+    "url": "https://rougeintime.ar/productos/black/"
+  },
+  {
+    "slug": "encendida",
+    "name": "Encendida",
+    "category": "body",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/dc8ae4fa-ac76-4bb1-9212-7a8231d94331-26a7e09ee16809525317203939937778-240-0.webp",
+    "url": "https://rougeintime.ar/productos/encendida/"
+  },
+  {
+    "slug": "dominatrox",
+    "name": "Dominatrox",
+    "category": "body",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-04-01-112657-9e6553b2530f9b8be717435177423939-240-0.webp",
+    "url": "https://rougeintime.ar/productos/dominatrox/"
+  },
+  {
+    "slug": "bata1",
+    "name": "Bata1",
+    "category": "bata",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/9e00319b-2044-4fc1-b15d-274f1c70736d-c461bb3853e6040cf617162914036605-240-0.webp",
+    "url": "https://rougeintime.ar/productos/bata1/"
+  },
+  {
+    "slug": "dame-un-gr",
+    "name": "Dame Un Gr",
+    "category": "bata",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/img_4003-26bc427ce8575c41e817568186702074-240-0.webp",
+    "url": "https://rougeintime.ar/productos/dame-un-gr/"
+  },
+  {
+    "slug": "set-pijama-baby-doll-rouge",
+    "name": "Set Pijama Baby Doll Rouge",
+    "category": "bata",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-02-24-001748-425d0c42b3526c9d6617403673488006-240-0.webp",
+    "url": "https://rougeintime.ar/productos/set-pijama-baby-doll-rouge/"
+  },
+  {
+    "slug": "bata-larga-rouge-2",
+    "name": "Bata Larga Rouge 2",
+    "category": "bata",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-02-24-011346-d06ba672ca6805886d17403704449963-240-0.webp",
+    "url": "https://rougeintime.ar/productos/bata-larga-rouge-2/"
+  },
+  {
+    "slug": "set-baby-doll-bata-rouge",
+    "name": "Set Baby Doll Bata Rouge",
+    "category": "bata",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-02-24-005226-596c156fe305d42f8517403691854750-240-0.webp",
+    "url": "https://rougeintime.ar/productos/set-baby-doll-bata-rouge/"
+  },
+  {
+    "slug": "bata-rouge",
+    "name": "Bata Rouge",
+    "category": "bata",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-02-24-004756-44308b94ee3834f51f17403688856209-240-0.webp",
+    "url": "https://rougeintime.ar/productos/bata-rouge/"
+  },
+  {
+    "slug": "box-san-valentin1",
+    "name": "Box San Valentin1",
+    "category": "bata",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/imagen-de-whatsapp-2025-01-29-a-las-10-29-50_8a0d1926-c0d79c0c0caccc0d9317381574759967-240-0.webp",
+    "url": "https://rougeintime.ar/productos/box-san-valentin1/"
+  },
+  {
+    "slug": "diosa-de-fuego",
+    "name": "Diosa De Fuego",
+    "category": "catsuit",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-10-02-134238-6e3b0a1e48e12d001417594235141608-240-0.webp",
+    "url": "https://rougeintime.ar/productos/diosa-de-fuego/"
+  },
+  {
+    "slug": "motor",
+    "name": "Motor",
+    "category": "catsuit",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-10-02-133830-613bb5713cc7be097a17594232027442-240-0.webp",
+    "url": "https://rougeintime.ar/productos/motor/"
+  },
+  {
+    "slug": "icon",
+    "name": "Icon",
+    "category": "catsuit",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-10-02-133126-df375c08d60da5bedd17594227422911-240-0.webp",
+    "url": "https://rougeintime.ar/productos/icon/"
+  },
+  {
+    "slug": "luz-prohibida",
+    "name": "Luz Prohibida",
+    "category": "catsuit",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-10-02-132652-259703f7bd6406e8ba17594225333891-240-0.webp",
+    "url": "https://rougeintime.ar/productos/luz-prohibida/"
+  },
+  {
+    "slug": "diamante-prohibido",
+    "name": "Diamante Prohibido",
+    "category": "catsuit",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-10-02-132124-03795c39055852274e17594222146938-240-0.webp",
+    "url": "https://rougeintime.ar/productos/diamante-prohibido/"
+  },
+  {
+    "slug": "cristal-de-medianoche",
+    "name": "Cristal De Medianoche",
+    "category": "catsuit",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-10-02-131419-3b9a388b61385901e917594217103832-240-0.webp",
+    "url": "https://rougeintime.ar/productos/cristal-de-medianoche/"
+  },
+  {
+    "slug": "perla-fatal",
+    "name": "Perla Fatal",
+    "category": "catsuit",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-10-02-130907-80413c236be6a2306417594214744265-240-0.webp",
+    "url": "https://rougeintime.ar/productos/perla-fatal/"
+  },
+  {
+    "slug": "kit-pasion-extasis-fetiche",
+    "name": "Kit Pasion Extasis Fetiche",
+    "category": "corsets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/oxgymxbrpt0-8416a9ac53e2d6d14817301275282650-240-0.webp",
+    "url": "https://rougeintime.ar/productos/kit-pasion-extasis-fetiche/"
+  },
+  {
+    "slug": "sexiactiva",
+    "name": "Sexiactiva",
+    "category": "corsets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-09-30-103459-2cd42dc1920e3253e917277033476595-240-0.webp",
+    "url": "https://rougeintime.ar/productos/sexiactiva/"
+  },
+  {
+    "slug": "toque-prohibido",
+    "name": "Toque Prohibido",
+    "category": "corsets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-09-12-165158-7992be7460b9f9755c17261709878862-240-0.webp",
+    "url": "https://rougeintime.ar/productos/toque-prohibido/"
+  },
+  {
+    "slug": "dominia-7vjsb",
+    "name": "Dominia 7Vjsb",
+    "category": "corsets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2026-01-14-093647-697fa865e6998e7e6217683943265101-240-0.webp",
+    "url": "https://rougeintime.ar/productos/dominia-7vjsb/"
+  },
+  {
+    "slug": "mystique",
+    "name": "Mystique",
+    "category": "corsets",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/4564abc5-c86f-4a41-bcba-0cdb8a951978-e5e8eda572d1c760fc17250263565655-240-0.webp",
+    "url": "https://rougeintime.ar/productos/mystique/"
+  },
+  {
+    "slug": "set-3-piezas-rouge",
+    "name": "Set 3 Piezas Rouge",
+    "category": "pijamas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-02-24-005949-28f68dbcc7fc4d41c817403696529982-240-0.webp",
+    "url": "https://rougeintime.ar/productos/set-3-piezas-rouge/"
+  },
+  {
+    "slug": "short-rouge",
+    "name": "Short Rouge",
+    "category": "pijamas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-02-24-012542-57aedf8c303c1d33b817403714210914-240-0.webp",
+    "url": "https://rougeintime.ar/productos/short-rouge/"
+  },
+  {
+    "slug": "belgirl-wbjjj",
+    "name": "Belgirl Wbjjj",
+    "category": "pijamas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/img_3689-f1a62cd22a75260ff517640062146651-240-0.webp",
+    "url": "https://rougeintime.ar/productos/belgirl-wbjjj/"
+  },
+  {
+    "slug": "combo-familia",
+    "name": "Combo Familia",
+    "category": "pijamas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-04-23-090214-271643fa099c1d090a17454102381295-240-0.webp",
+    "url": "https://rougeintime.ar/productos/combo-familia/"
+  },
+  {
+    "slug": "pijama-rouge",
+    "name": "Pijama Rouge",
+    "category": "pijamas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/whatsapp-image-2025-03-26-at-09-21-45-792233d7daffd3998317429925460394-240-0.webp",
+    "url": "https://rougeintime.ar/productos/pijama-rouge/"
+  },
+  {
+    "slug": "remera-rouge",
+    "name": "Remera Rouge",
+    "category": "pijamas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-02-24-012542-5dfafe3f845db0994317403712149040-240-0.webp",
+    "url": "https://rougeintime.ar/productos/remera-rouge/"
+  },
+  {
+    "slug": "baby-doll-rouge",
+    "name": "Baby Doll Rouge",
+    "category": "pijamas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-02-24-011948-f63d60d706e6b0c2af17403708018320-240-0.webp",
+    "url": "https://rougeintime.ar/productos/baby-doll-rouge/"
+  },
+  {
+    "slug": "camisa-short-rouge",
+    "name": "Camisa Short Rouge",
+    "category": "pijamas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-02-24-010939-5694667235d558e65117403702590017-240-0.webp",
+    "url": "https://rougeintime.ar/productos/camisa-short-rouge/"
+  },
+  {
+    "slug": "set-rouge",
+    "name": "Set Rouge",
+    "category": "pijamas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-02-24-010414-42d4b69abc91eafa0d17403698967498-240-0.webp",
+    "url": "https://rougeintime.ar/productos/set-rouge/"
+  },
+  {
+    "slug": "mucama",
+    "name": "Mucama",
+    "category": "disfraces",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-09-12-085629-ed48e83a4f7883dc4717261422248344-240-0.webp",
+    "url": "https://rougeintime.ar/productos/mucama/"
+  },
+  {
+    "slug": "colegiala",
+    "name": "Colegiala",
+    "category": "disfraces",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-09-12-085141-c7dd9aafd1191be38217261419691781-240-0.webp",
+    "url": "https://rougeintime.ar/productos/colegiala/"
+  },
+  {
+    "slug": "mucama-3",
+    "name": "Mucama 3",
+    "category": "disfraces",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-09-10-141827-9920799441402ca41517575347142807-240-0.webp",
+    "url": "https://rougeintime.ar/productos/mucama-3/"
+  },
+  {
+    "slug": "secretaria",
+    "name": "Secretaria",
+    "category": "disfraces",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-10-01-173918-e13d30c30fb61af73b17278153735202-240-0.webp",
+    "url": "https://rougeintime.ar/productos/secretaria/"
+  },
+  {
+    "slug": "emperatriz-del-encaje",
+    "name": "Emperatriz Del Encaje",
+    "category": "disfraces",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-09-12-083423-310339b3e99c08cf8d17261412943943-240-0.webp",
+    "url": "https://rougeintime.ar/productos/emperatriz-del-encaje/"
+  },
+  {
+    "slug": "monja",
+    "name": "Monja",
+    "category": "disfraces",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-09-12-090020-f9c40da3ae8bb016e717261425398767-240-0.webp",
+    "url": "https://rougeintime.ar/productos/monja/"
+  },
+  {
+    "slug": "conejita",
+    "name": "Conejita",
+    "category": "disfraces",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-10-07-142510-ee9ba1605389bcfbe417598579613823-240-0.webp",
+    "url": "https://rougeintime.ar/productos/conejita/"
+  },
+  {
+    "slug": "enfermera-alicia",
+    "name": "Enfermera Alicia",
+    "category": "disfraces",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-07-29-100300-eeeebf11ee1f0a19fa17222593428353-240-0.webp",
+    "url": "https://rougeintime.ar/productos/enfermera-alicia/"
+  },
+  {
+    "slug": "princesa-3",
+    "name": "Princesa 3",
+    "category": "disfraces",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-10-06-152731-207626b343ae1224c917597779155260-240-0.webp",
+    "url": "https://rougeintime.ar/productos/princesa-3/"
+  },
+  {
+    "slug": "gatubela-haloween",
+    "name": "Gatubela Haloween",
+    "category": "disfraces",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-10-06-152910-3a9aaf1d0865bb7a5e17597761212782-240-0.webp",
+    "url": "https://rougeintime.ar/productos/gatubela-haloween/"
+  },
+  {
+    "slug": "policia",
+    "name": "Policia",
+    "category": "disfraces",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-10-01-174107-9e2e80c34a64ee7fb217278153001237-240-0.webp",
+    "url": "https://rougeintime.ar/productos/policia/"
+  },
+  {
+    "slug": "monja-hermana",
+    "name": "Monja Hermana",
+    "category": "disfraces",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-10-01-173759-d9edafc7fb5da3371917278150868243-240-0.webp",
+    "url": "https://rougeintime.ar/productos/monja-hermana/"
+  },
+  {
+    "slug": "enfermera-ssexxx",
+    "name": "Enfermera Ssexxx",
+    "category": "disfraces",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-10-06-152725-192f0c161274d99b5217597780399745-240-0.webp",
+    "url": "https://rougeintime.ar/productos/enfermera-ssexxx/"
+  },
+  {
+    "slug": "villana",
+    "name": "Villana",
+    "category": "disfraces",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-10-06-152742-d4078070a90a62ef2817597777010849-240-0.webp",
+    "url": "https://rougeintime.ar/productos/villana/"
+  },
+  {
+    "slug": "dark",
+    "name": "Dark",
+    "category": "disfraces",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-10-06-152748-628d8cf56e3bba008917597776179393-240-0.webp",
+    "url": "https://rougeintime.ar/productos/dark/"
+  },
+  {
+    "slug": "perfume-hot-inevitable-so-excited-con-feromonas",
+    "name": "Perfume Hot Inevitable So Excited Con Feromonas",
+    "category": "sexshop",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2023-11-16-100930-c5fd6b9da64e40341a17183710897053-240-0.webp",
+    "url": "https://rougeintime.ar/productos/perfume-hot-inevitable-so-excited-con-feromonas/"
+  },
+  {
+    "slug": "set-vibro-7-piezas",
+    "name": "Set Vibro 7 Piezas",
+    "category": "sexshop",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2023-11-22-080729-018c733543289a493d17183703684334-240-0.webp",
+    "url": "https://rougeintime.ar/productos/set-vibro-7-piezas/"
+  },
+  {
+    "slug": "lubricante-lube",
+    "name": "Lubricante Lube",
+    "category": "sexshop",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2023-11-16-104330-33a4a0e6e49a62a03717183716424723-240-0.webp",
+    "url": "https://rougeintime.ar/productos/lubricante-lube/"
+  },
+  {
+    "slug": "wet-gel-lubricante",
+    "name": "Wet Gel Lubricante",
+    "category": "sexshop",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2023-11-16-104458-b79ac177ac76cdf11817183706935090-240-0.webp",
+    "url": "https://rougeintime.ar/productos/wet-gel-lubricante/"
+  },
+  {
+    "slug": "crema-intensificante-black-dragon",
+    "name": "Crema Intensificante Black Dragon",
+    "category": "sexshop",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2023-11-16-104400-c2c5660df5929ea3e017183705614914-240-0.webp",
+    "url": "https://rougeintime.ar/productos/crema-intensificante-black-dragon/"
+  },
+  {
+    "slug": "kit-exclusivo-badgirl-lubricante",
+    "name": "Kit Exclusivo Badgirl Lubricante",
+    "category": "sexshop",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/oxgymhjrpt0-957731a0e99b0dc42117301270641621-240-0.webp",
+    "url": "https://rougeintime.ar/productos/kit-exclusivo-badgirl-lubricante/"
+  },
+  {
+    "slug": "pink-sexy-pill-mujer-sexitive-vigorizante-libido-l-arginina",
+    "name": "Pink Sexy Pill Mujer Sexitive Vigorizante Libido L Arginina",
+    "category": "sexshop",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2023-11-16-104833-4586d817f39fd83a1417183722815337-240-0.webp",
+    "url": "https://rougeintime.ar/productos/pink-sexy-pill-mujer-sexitive-vigorizante-libido-l-arginina/"
+  },
+  {
+    "slug": "kit-seduccion-irresistible-pizzo-perfume",
+    "name": "Kit Seduccion Irresistible Pizzo Perfume",
+    "category": "sexshop",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/oxhlog9npt0-af67814814df0a535a17303118778258-240-0.webp",
+    "url": "https://rougeintime.ar/productos/kit-seduccion-irresistible-pizzo-perfume/"
+  },
+  {
+    "slug": "aceite-corporal-iluminador-hidratante-brillo-glitter",
+    "name": "Aceite Corporal Iluminador Hidratante Brillo Glitter",
+    "category": "sexshop",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2023-11-16-105109-58eed2df20a75f1aea17183726784757-240-0.webp",
+    "url": "https://rougeintime.ar/productos/aceite-corporal-iluminador-hidratante-brillo-glitter/"
+  },
+  {
+    "slug": "les-amants-juego-de-cartas-dados",
+    "name": "Les Amants Juego De Cartas Dados",
+    "category": "sexshop",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2023-11-16-101148-4095cd5fe2d24c7b8317183712625735-240-0.webp",
+    "url": "https://rougeintime.ar/productos/les-amants-juego-de-cartas-dados/"
+  },
+  {
+    "slug": "erotic-tarot",
+    "name": "Erotic Tarot",
+    "category": "sexshop",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2023-11-16-101028-3857a095bf01aba35917183708401332-240-0.webp",
+    "url": "https://rougeintime.ar/productos/erotic-tarot/"
+  },
+  {
+    "slug": "succionador-app",
+    "name": "Succionador App",
+    "category": "sexshop",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/13a5df64-a9bf-4195-9062-11cafac364c2-5bb4dbb8796dfb425217424924874828-240-0.webp",
+    "url": "https://rougeintime.ar/productos/succionador-app/"
+  },
+  {
+    "slug": "luxury-pasion",
+    "name": "Luxury Pasion",
+    "category": "sexshop",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/94a1a3af-b1c0-46c5-82b4-eafdb07816c8-4d344702f6ee6ce9bb17424922824395-240-0.webp",
+    "url": "https://rougeintime.ar/productos/luxury-pasion/"
+  },
+  {
+    "slug": "set-luxuri-niko-black",
+    "name": "Set Luxuri Niko Black",
+    "category": "sexshop",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/b30116bb-693e-4143-8575-09d9ade8cff6-b6700a3fa882bb01f717424920007435-240-0.webp",
+    "url": "https://rougeintime.ar/productos/set-luxuri-niko-black/"
+  },
+  {
+    "slug": "box-navideno-three",
+    "name": "Box Navideno Three",
+    "category": "sexshop",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/imagen-de-whatsapp-2024-11-21-a-las-10-33-17_2bca826c-b03473eb5ae973815517321961642500-240-0.webp",
+    "url": "https://rougeintime.ar/productos/box-navideno-three/"
+  },
+  {
+    "slug": "hot-inevitable-so-excited",
+    "name": "Hot Inevitable So Excited",
+    "category": "perfume-feromonas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-07-17-092223-489e30c84758815f1e17527549602786-240-0.webp",
+    "url": "https://rougeintime.ar/productos/hot-inevitable-so-excited/"
+  },
+  {
+    "slug": "hot-inevitable",
+    "name": "Hot Inevitable",
+    "category": "perfume-feromonas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-07-17-092544-560f257b488b84f78f17527551714831-240-0.webp",
+    "url": "https://rougeintime.ar/productos/hot-inevitable/"
+  },
+  {
+    "slug": "hotel-for-magic-lovers-room-spray",
+    "name": "Hotel For Magic Lovers Room Spray",
+    "category": "perfume-feromonas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-07-17-093524-db2a53a0bf3ecb40c017527557394433-240-0.webp",
+    "url": "https://rougeintime.ar/productos/hotel-for-magic-lovers-room-spray/"
+  },
+  {
+    "slug": "hotel-atmosphere-room-spray",
+    "name": "Hotel Atmosphere Room Spray",
+    "category": "perfume-feromonas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-07-17-093345-1472696eebfff8018617527556399838-240-0.webp",
+    "url": "https://rougeintime.ar/productos/hotel-atmosphere-room-spray/"
+  },
+  {
+    "slug": "body-splash-petit-mort",
+    "name": "Body Splash Petit Mort",
+    "category": "perfume-feromonas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-07-17-093222-d630b5dbcb3ee7426f17527555589780-240-0.webp",
+    "url": "https://rougeintime.ar/productos/body-splash-petit-mort/"
+  },
+  {
+    "slug": "body-splash-hot-inevitable",
+    "name": "Body Splash Hot Inevitable",
+    "category": "perfume-feromonas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-07-17-092852-93e32efe960d5415da17527553523816-240-0.webp",
+    "url": "https://rougeintime.ar/productos/body-splash-hot-inevitable/"
+  },
+  {
+    "slug": "body-splash-love",
+    "name": "Body Splash Love",
+    "category": "perfume-feromonas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-07-17-092759-52b2ff74516dc6f88517527552988092-240-0.webp",
+    "url": "https://rougeintime.ar/productos/body-splash-love/"
+  },
+  {
+    "slug": "body-splash-crazy-girl",
+    "name": "Body Splash Crazy Girl",
+    "category": "perfume-feromonas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-07-17-092646-005c51b43b5ee9a31517527552234536-240-0.webp",
+    "url": "https://rougeintime.ar/productos/body-splash-crazy-girl/"
+  },
+  {
+    "slug": "for-him-gentleman",
+    "name": "For Him Gentleman",
+    "category": "perfume-feromonas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-07-17-092442-ce6302e3c8ab26ceb717527550990712-240-0.webp",
+    "url": "https://rougeintime.ar/productos/for-him-gentleman/"
+  },
+  {
+    "slug": "for-him-vip",
+    "name": "For Him Vip",
+    "category": "perfume-feromonas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-07-17-092058-f3eef544f72f49e23617527548861963-240-0.webp",
+    "url": "https://rougeintime.ar/productos/for-him-vip/"
+  },
+  {
+    "slug": "for-him",
+    "name": "For Him",
+    "category": "perfume-feromonas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-07-17-091945-ade1b11747d2b815f217527548055944-240-0.webp",
+    "url": "https://rougeintime.ar/productos/for-him/"
+  },
+  {
+    "slug": "inevitable-men-vip",
+    "name": "Inevitable Men Vip",
+    "category": "perfume-feromonas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-07-17-091848-c4ce00108efe346ed417527547504909-240-0.webp",
+    "url": "https://rougeintime.ar/productos/inevitable-men-vip/"
+  },
+  {
+    "slug": "inevitable-men",
+    "name": "Inevitable Men",
+    "category": "perfume-feromonas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-07-17-091755-a4ef68ad219833122d17527546955724-240-0.webp",
+    "url": "https://rougeintime.ar/productos/inevitable-men/"
+  },
+  {
+    "slug": "crazy-girl",
+    "name": "Crazy Girl",
+    "category": "perfume-feromonas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-07-17-091625-dfeba77f317355b94c17527546160680-240-0.webp",
+    "url": "https://rougeintime.ar/productos/crazy-girl/"
+  },
+  {
+    "slug": "it-femme-florale",
+    "name": "It Femme Florale",
+    "category": "perfume-feromonas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-07-17-091350-5b9e1dd143e159766c17527544474159-240-0.webp",
+    "url": "https://rougeintime.ar/productos/it-femme-florale/"
+  },
+  {
+    "slug": "it-femme",
+    "name": "It Femme",
+    "category": "perfume-feromonas",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-07-17-091235-0fb2b3e70dfd97ebb917527543820598-240-0.webp",
+    "url": "https://rougeintime.ar/productos/it-femme/"
+  },
+  {
+    "slug": "culotte",
+    "name": "Culotte",
+    "category": "panty-vedetina-culotte",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/2a2c3756-785b-4482-b9dd-723b4320d74e-4d940b4fbee6dd69bc17046084214389-240-0.webp",
+    "url": "https://rougeintime.ar/productos/culotte/"
+  },
+  {
+    "slug": "soy-tu-put4",
+    "name": "Soy Tu Put4",
+    "category": "panty-vedetina-culotte",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/54363ff1-ed18-4899-b612-f3912339aecc-b90768ca2b21eb2faf17136350149067-240-0.webp",
+    "url": "https://rougeintime.ar/productos/soy-tu-put4/"
+  },
+  {
+    "slug": "medias-de-lycra",
+    "name": "Medias De Lycra",
+    "category": "panty-vedetina-culotte",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/507b13af-5a3c-49b7-b5b0-d6b641f60383-5b37c01dbb120eb21f17087062019742-240-0.webp",
+    "url": "https://rougeintime.ar/productos/medias-de-lycra/"
+  },
+  {
+    "slug": "less-put",
+    "name": "Less Put",
+    "category": "panty-vedetina-culotte",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-07-29-102624-ea1fd89d70f084f3b217222595972952-240-0.webp",
+    "url": "https://rougeintime.ar/productos/less-put/"
+  },
+  {
+    "slug": "pack-x3",
+    "name": "Pack X3",
+    "category": "panty-vedetina-culotte",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-09-30-102947-b8ab43535daf261e3017277030891510-240-0.webp",
+    "url": "https://rougeintime.ar/productos/pack-x3/"
+  },
+  {
+    "slug": "pack-x3-medias-de-red-o-lycra-gy5yo",
+    "name": "Pack X3 Medias De Red O Lycra Gy5Yo",
+    "category": "panty-vedetina-culotte",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-11-12-094428-d120e13c7d0ae084f917629515355245-240-0.webp",
+    "url": "https://rougeintime.ar/productos/pack-x3-medias-de-red-o-lycra-gy5yo/"
+  },
+  {
+    "slug": "panty",
+    "name": "Panty",
+    "category": "panty-vedetina-culotte",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-09-30-102601-b02e31758d0a044f2e17277027673230-240-0.webp",
+    "url": "https://rougeintime.ar/productos/panty/"
+  },
+  {
+    "slug": "mitones",
+    "name": "Mitones",
+    "category": "panty-vedetina-culotte",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2024-09-12-091619-e2c55d5c0a852eebf617261433907494-240-0.webp",
+    "url": "https://rougeintime.ar/productos/mitones/"
+  },
+  {
+    "slug": "guantes",
+    "name": "Guantes",
+    "category": "panty-vedetina-culotte",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/218bf464-0507-47fc-813b-33b9bd3c4050-c4d76389e6857ca9ab17250400830795-240-0.webp",
+    "url": "https://rougeintime.ar/productos/guantes/"
+  },
+  {
+    "slug": "personaliza-tu-less-8z9t3",
+    "name": "Personaliza Tu Less 8Z9T3",
+    "category": "panty-vedetina-culotte",
+    "price": null,
+    "image": "//acdn-us.mitiendanube.com/stores/004/099/592/products/captura-de-pantalla-2025-12-01-091544-fa24296d4ae939c8a417645922106515-240-0.webp",
+    "url": "https://rougeintime.ar/productos/personaliza-tu-less-8z9t3/"
+  }
+]

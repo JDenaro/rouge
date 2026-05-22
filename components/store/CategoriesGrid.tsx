@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import { categories } from '@/lib/mock-data'
+import { getCategoryThumbnails } from '@/lib/products'
 
-export function CategoriesGrid() {
+export async function CategoriesGrid() {
+  const thumbnails = await getCategoryThumbnails(categories.map((c) => c.slug))
   return (
     <section
       style={{
@@ -45,7 +47,9 @@ export function CategoriesGrid() {
           gap: '1.25rem',
         }}
       >
-        {categories.map((cat) => (
+        {categories.map((cat) => {
+          const image = thumbnails[cat.slug] || cat.image
+          return (
           <Link
             key={cat.slug}
             href={`/${cat.slug}`}
@@ -66,7 +70,7 @@ export function CategoriesGrid() {
               style={{
                 position: 'absolute',
                 inset: 0,
-                backgroundImage: `url('${cat.image}')`,
+                backgroundImage: `url('${image}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 transition: 'transform var(--dur-slow) var(--ease-out)',
@@ -115,7 +119,8 @@ export function CategoriesGrid() {
               </p>
             </div>
           </Link>
-        ))}
+          )
+        })}
       </div>
 
       <style>{`

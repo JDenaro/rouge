@@ -1,7 +1,14 @@
 import Link from 'next/link'
-import { featuredProducts, formatARS } from '@/lib/mock-data'
+import { getFeaturedProducts, transferPrice } from '@/lib/products'
+import { formatARS } from '@/lib/mock-data'
 
-export function FeaturedProducts() {
+export async function FeaturedProducts() {
+  const products = await getFeaturedProducts()
+
+  if (products.length === 0) {
+    return null
+  }
+
   return (
     <section
       style={{
@@ -71,119 +78,123 @@ export function FeaturedProducts() {
             gap: '1.5rem',
           }}
         >
-          {featuredProducts.map((p) => (
-            <article
-              key={p.slug}
-              className="rouge-prod-card"
-              style={{
-                position: 'relative',
-                background: 'white',
-                borderRadius: 'var(--radius-lg)',
-                overflow: 'hidden',
-                boxShadow: 'var(--shadow-card)',
-                transition: 'transform var(--dur-mid) var(--ease-out), box-shadow var(--dur-mid) var(--ease-out)',
-              }}
-            >
-              <Link href={`/producto/${p.slug}`} style={{ display: 'block', textDecoration: 'none' }}>
-                <div
-                  style={{
-                    position: 'relative',
-                    aspectRatio: '3 / 4',
-                    overflow: 'hidden',
-                    background: 'rgba(192, 68, 90, 0.04)',
-                  }}
-                >
+          {products.map((p) => {
+            const image = p.images?.[0] ?? ''
+            const tPrice = transferPrice(p.price)
+            return (
+              <article
+                key={p.slug}
+                className="rouge-prod-card"
+                style={{
+                  position: 'relative',
+                  background: 'white',
+                  borderRadius: 'var(--radius-lg)',
+                  overflow: 'hidden',
+                  boxShadow: 'var(--shadow-card)',
+                  transition: 'transform var(--dur-mid) var(--ease-out), box-shadow var(--dur-mid) var(--ease-out)',
+                }}
+              >
+                <Link href={`/producto/${p.slug}`} style={{ display: 'block', textDecoration: 'none' }}>
                   <div
-                    aria-hidden
-                    className="rouge-prod-img"
                     style={{
-                      position: 'absolute',
-                      inset: 0,
-                      backgroundImage: `url('${p.image}')`,
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center',
-                      transition: 'transform var(--dur-slow) var(--ease-out)',
-                    }}
-                  />
-                  <span
-                    style={{
-                      position: 'absolute',
-                      top: '0.75rem',
-                      left: '0.75rem',
-                      padding: '0.25rem 0.625rem',
-                      borderRadius: '999px',
-                      background: 'var(--color-primary)',
-                      color: 'white',
-                      fontFamily: 'var(--font-body)',
-                      fontSize: '0.6875rem',
-                      fontWeight: 600,
-                      letterSpacing: '0.05em',
-                      textTransform: 'uppercase',
+                      position: 'relative',
+                      aspectRatio: '3 / 4',
+                      overflow: 'hidden',
+                      background: 'rgba(192, 68, 90, 0.04)',
                     }}
                   >
-                    -10% transfer
-                  </span>
-                </div>
-
-                <div style={{ padding: '1.25rem' }}>
-                  <h3
-                    style={{
-                      fontFamily: 'var(--font-heading)',
-                      fontSize: '1.375rem',
-                      fontWeight: 500,
-                      margin: 0,
-                      marginBottom: '0.5rem',
-                      color: 'var(--color-fg)',
-                      letterSpacing: '0.01em',
-                    }}
-                  >
-                    {p.name}
-                  </h3>
-
-                  <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.5rem', marginBottom: '1rem' }}>
+                    <div
+                      aria-hidden
+                      className="rouge-prod-img"
+                      style={{
+                        position: 'absolute',
+                        inset: 0,
+                        backgroundImage: `url('${image}')`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        transition: 'transform var(--dur-slow) var(--ease-out)',
+                      }}
+                    />
                     <span
                       style={{
+                        position: 'absolute',
+                        top: '0.75rem',
+                        left: '0.75rem',
+                        padding: '0.25rem 0.625rem',
+                        borderRadius: '999px',
+                        background: 'var(--color-primary)',
+                        color: 'white',
                         fontFamily: 'var(--font-body)',
-                        fontSize: '1.0625rem',
+                        fontSize: '0.6875rem',
                         fontWeight: 600,
-                        color: 'var(--color-primary)',
+                        letterSpacing: '0.05em',
+                        textTransform: 'uppercase',
                       }}
                     >
-                      {formatARS(p.transferPrice)}
-                    </span>
-                    <span
-                      style={{
-                        fontFamily: 'var(--font-body)',
-                        fontSize: '0.8125rem',
-                        color: 'var(--color-fg)',
-                        opacity: 0.5,
-                        textDecoration: 'line-through',
-                      }}
-                    >
-                      {formatARS(p.price)}
+                      -12% transfer
                     </span>
                   </div>
 
-                  <span
-                    style={{
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '0.5rem',
-                      fontFamily: 'var(--font-body)',
-                      fontSize: '0.8125rem',
-                      fontWeight: 500,
-                      color: 'var(--color-fg)',
-                    }}
-                  >
-                    Comprar
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M5 12h14M13 5l7 7-7 7" />
-                    </svg>
-                  </span>
-                </div>
-              </Link>
-            </article>
-          ))}
+                  <div style={{ padding: '1.25rem' }}>
+                    <h3
+                      style={{
+                        fontFamily: 'var(--font-heading)',
+                        fontSize: '1.375rem',
+                        fontWeight: 500,
+                        margin: 0,
+                        marginBottom: '0.5rem',
+                        color: 'var(--color-fg)',
+                        letterSpacing: '0.01em',
+                      }}
+                    >
+                      {p.name}
+                    </h3>
+
+                    <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.5rem', marginBottom: '1rem' }}>
+                      <span
+                        style={{
+                          fontFamily: 'var(--font-body)',
+                          fontSize: '1.0625rem',
+                          fontWeight: 600,
+                          color: 'var(--color-primary)',
+                        }}
+                      >
+                        {formatARS(tPrice)}
+                      </span>
+                      <span
+                        style={{
+                          fontFamily: 'var(--font-body)',
+                          fontSize: '0.8125rem',
+                          color: 'var(--color-fg)',
+                          opacity: 0.5,
+                          textDecoration: 'line-through',
+                        }}
+                      >
+                        {formatARS(p.price)}
+                      </span>
+                    </div>
+
+                    <span
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                        fontFamily: 'var(--font-body)',
+                        fontSize: '0.8125rem',
+                        fontWeight: 500,
+                        color: 'var(--color-fg)',
+                      }}
+                    >
+                      Comprar
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M5 12h14M13 5l7 7-7 7" />
+                      </svg>
+                    </span>
+                  </div>
+                </Link>
+              </article>
+            )
+          })}
         </div>
       </div>
 
