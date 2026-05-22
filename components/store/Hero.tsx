@@ -17,9 +17,10 @@ export async function Hero() {
   const heroImage = await getHeroImage()
   return (
     <section
+      className="rouge-hero-section"
       style={{
         position: 'relative',
-        minHeight: '100vh',
+        minHeight: 'min(760px, 88vh)',
         display: 'flex',
         alignItems: 'center',
         overflow: 'hidden',
@@ -50,6 +51,7 @@ export async function Hero() {
       />
 
       <div
+        className="rouge-hero-content"
         style={{
           position: 'relative',
           zIndex: 1,
@@ -75,9 +77,10 @@ export async function Hero() {
           </p>
 
           <h1
+            className="rouge-hero-title"
             style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
+              fontSize: 'clamp(2rem, 6vw, 4.5rem)',
               fontWeight: 500,
               lineHeight: 1.05,
               color: 'white',
@@ -139,50 +142,6 @@ export async function Hero() {
         </div>
       </div>
 
-      {/* Floating badges row — hidden on mobile to avoid overlapping CTAs */}
-      <div
-        className="rouge-hero-badges"
-        style={{
-          position: 'absolute',
-          zIndex: 0,
-          bottom: '2rem',
-          left: 0,
-          right: 0,
-          display: 'flex',
-          justifyContent: 'center',
-          padding: '0 1.5rem',
-        }}
-      >
-        <div
-          className="glass-card"
-          style={{
-            display: 'flex',
-            gap: '2rem',
-            padding: '1rem 2rem',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
-          }}
-        >
-          {[
-            { label: 'Envíos a todo el país' },
-            { label: '12% OFF por transferencia' },
-            { label: 'Hasta 3 cuotas sin interés' },
-          ].map((b) => (
-            <span
-              key={b.label}
-              style={{
-                fontFamily: 'var(--font-body)',
-                fontSize: '0.8125rem',
-                fontWeight: 500,
-                color: 'var(--color-fg)',
-                letterSpacing: '0.02em',
-              }}
-            >
-              {b.label}
-            </span>
-          ))}
-        </div>
-      </div>
     </section>
   )
 }
