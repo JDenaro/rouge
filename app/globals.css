@@ -82,4 +82,14 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+  .rouge-whatsapp-fab {
+    transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 260ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .rouge-whatsapp-fab:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 24px rgba(37, 211, 102, 0.65);
+  }
 }

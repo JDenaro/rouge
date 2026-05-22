@@ -14,6 +14,7 @@ export default function StoreLayout({ children }: { children: React.ReactNode })
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Contactar por WhatsApp"
+        className="rouge-whatsapp-fab"
         style={{
           position: 'fixed',
           bottom: '1.5rem',
