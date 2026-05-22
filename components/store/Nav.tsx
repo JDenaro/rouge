@@ -51,10 +51,9 @@ export function Nav() {
           left: 0,
           right: 0,
           zIndex: 50,
-          transition: 'background var(--dur-mid) var(--ease-out), backdrop-filter var(--dur-mid) var(--ease-out), box-shadow var(--dur-mid) var(--ease-out)',
-          background: scrolled ? 'rgba(253, 248, 248, 0.85)' : 'transparent',
-          backdropFilter: scrolled ? 'blur(12px)' : 'none',
-          WebkitBackdropFilter: scrolled ? 'blur(12px)' : 'none',
+          background: 'rgba(253, 248, 248, 0.85)',
+          backdropFilter: 'blur(12px)',
+          WebkitBackdropFilter: 'blur(12px)',
           boxShadow: scrolled ? '0 1px 0 rgba(192, 68, 90, 0.08)' : 'none',
         }}
       >
