@@ -1,0 +1,28 @@
+components/store/Nav.tsx
+  s_dfb4f4bf2d506d::t_5d94eb6f51b81b 54-57
+  s_dfb4f4bf2d506d::t_264e007d904e5a 88-89
+  s_dfb4f4bf2d506d::t_92da0625d7d8a7 158-159
+  s_dfb4f4bf2d506d::t_0ae1d7172b096f 106-107
+  s_dfb4f4bf2d506d::t_81684fed769856 132-133
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "40e47a31c97dd87641ca81a36e1f914731c78de7",
+  "prompts": {},
+  "humans": {
+    "h_bcaf4f6495f2ae": {
+      "author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  },
+  "sessions": {
+    "s_dfb4f4bf2d506d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab10ac9f-a61a-4c4f-8ddd-4e6d75b06b0f",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
