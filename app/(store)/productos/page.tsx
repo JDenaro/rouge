@@ -152,10 +152,13 @@ export default async function ProductosPage({
           .rouge-catalog-aside ul {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.375rem;
+            gap: 0.5rem;
           }
           .rouge-catalog-aside li a {
-            padding: 0.375rem 0.75rem !important;
+            padding: 0.625rem 0.875rem !important;
+            min-height: 40px;
+            display: inline-flex !important;
+            align-items: center;
             border-radius: 999px;
             background: rgba(192, 68, 90, 0.06);
             font-size: 0.8125rem !important;

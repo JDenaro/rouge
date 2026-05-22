@@ -136,13 +136,16 @@ const footerList: React.CSSProperties = {
   padding: 0,
   display: 'flex',
   flexDirection: 'column',
-  gap: '0.625rem',
+  gap: '0.125rem',
 }
 
 const footerLink: React.CSSProperties = {
+  display: 'inline-block',
   fontFamily: 'var(--font-body)',
   fontSize: '0.875rem',
   color: 'rgba(253, 248, 248, 0.75)',
   textDecoration: 'none',
+  padding: '0.5rem 0',
+  lineHeight: 1.5,
   transition: 'color var(--dur-fast) var(--ease-out)',
 }

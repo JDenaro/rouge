@@ -20,17 +20,12 @@ export function ProductGrid({ products }: { products: Product[] }) {
   }
 
   return (
-    <div
-      className="rouge-product-grid"
-      style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-        gap: '1.25rem',
-      }}
-    >
-      {products.map((p) => (
-        <ProductCard key={p.id} product={p} />
-      ))}
+    <>
+      <div className="rouge-product-grid">
+        {products.map((p) => (
+          <ProductCard key={p.id} product={p} />
+        ))}
+      </div>
       <style>{`
         .rouge-product-grid {
           display: grid;
@@ -39,9 +34,12 @@ export function ProductGrid({ products }: { products: Product[] }) {
         }
         @media (max-width: 640px) {
           .rouge-product-grid {
-            grid-template-columns: repeat(2, 1fr) !important;
-            gap: 0.75rem !important;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
           }
+        }
+        .rouge-prod-card {
+          transition: transform var(--dur-mid) var(--ease-out), box-shadow var(--dur-mid) var(--ease-out);
         }
         .rouge-prod-card:hover {
           transform: translateY(-4px);
@@ -51,6 +49,6 @@ export function ProductGrid({ products }: { products: Product[] }) {
           transform: scale(1.04);
         }
       `}</style>
-    </div>
+    </>
   )
 }

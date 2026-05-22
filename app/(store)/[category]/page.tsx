@@ -52,11 +52,17 @@ export default async function CategoryPage({
           marginBottom: '1rem',
         }}
       >
-        <Link href="/" style={{ color: 'inherit', textDecoration: 'none' }}>
+        <Link
+          href="/"
+          style={{ color: 'inherit', textDecoration: 'none', padding: '0.5rem 0', display: 'inline-block', lineHeight: 1.4 }}
+        >
           Inicio
         </Link>
         {' / '}
-        <Link href="/productos" style={{ color: 'inherit', textDecoration: 'none' }}>
+        <Link
+          href="/productos"
+          style={{ color: 'inherit', textDecoration: 'none', padding: '0.5rem 0', display: 'inline-block', lineHeight: 1.4 }}
+        >
           Catálogo
         </Link>
         {' / '}

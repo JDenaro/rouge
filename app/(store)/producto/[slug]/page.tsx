@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { AddToCart } from '@/components/store/AddToCart'
-import { ProductCard } from '@/components/store/ProductCard'
+import { ProductGrid } from '@/components/store/ProductGrid'
 import {
   CATEGORY_META,
   getProductBySlug,
@@ -64,11 +64,17 @@ export default async function ProductPage({
           marginBottom: '1.5rem',
         }}
       >
-        <Link href="/" style={{ color: 'inherit', textDecoration: 'none' }}>
+        <Link
+          href="/"
+          style={{ color: 'inherit', textDecoration: 'none', padding: '0.5rem 0', display: 'inline-block', lineHeight: 1.4 }}
+        >
           Inicio
         </Link>
         {' / '}
-        <Link href={`/${product.category}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+        <Link
+          href={`/${product.category}`}
+          style={{ color: 'inherit', textDecoration: 'none', padding: '0.5rem 0', display: 'inline-block', lineHeight: 1.4 }}
+        >
           {categoryMeta.label}
         </Link>
         {' / '}
@@ -260,18 +266,7 @@ export default async function ProductPage({
           >
             Te puede interesar
           </h2>
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-              gap: '1.25rem',
-            }}
-            className="rouge-product-grid"
-          >
-            {related.map((p) => (
-              <ProductCard key={p.id} product={p} />
-            ))}
-          </div>
+          <ProductGrid products={related} />
         </section>
       )}
 
