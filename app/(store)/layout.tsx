@@ -1,9 +1,12 @@
+import { Nav } from '@/components/store/Nav'
+import { Footer } from '@/components/store/Footer'
+
 export default function StoreLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      {/* Nav will go here in Phase 3 */}
+      <Nav />
       <main>{children}</main>
-      {/* Footer will go here in Phase 3 */}
+      <Footer />
     </>
   )
 }
