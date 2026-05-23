@@ -1,0 +1,24 @@
+components/store/Footer.tsx
+  s_dfb4f4bf2d506d::t_b2d2fd4841ef44 63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "406cb2550733e34c2235b095114246183723ded8",
+  "prompts": {},
+  "humans": {
+    "h_bcaf4f6495f2ae": {
+      "author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  },
+  "sessions": {
+    "s_dfb4f4bf2d506d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab10ac9f-a61a-4c4f-8ddd-4e6d75b06b0f",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
