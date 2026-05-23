@@ -60,6 +60,7 @@ export function Footer() {
             <h4 style={footerHeading}>Información</h4>
             <ul style={footerList}>
               <li><Link href="/guia-de-talles" style={footerLink}>Guía de talles</Link></li>
+              <li><Link href="/faq" style={footerLink}>Preguntas frecuentes</Link></li>
               <li><Link href="/politica-de-cambios" style={footerLink}>Política de cambios</Link></li>
               <li><Link href="/contacto" style={footerLink}>Contacto</Link></li>
             </ul>
