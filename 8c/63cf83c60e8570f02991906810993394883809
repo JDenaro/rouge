@@ -1,0 +1,21 @@
+docs/superpowers/specs/2026-05-23-branching-strategy-design.md
+  s_dfb4f4bf2d506d::t_332872b75be5d5 1-125,147-175,177-186
+  s_dfb4f4bf2d506d::t_0dc8d5be279287 176
+  s_dfb4f4bf2d506d::t_37f3f1928c4e0b 126-146
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "8c63cf83c60e8570f02991906810993394883809",
+  "prompts": {},
+  "sessions": {
+    "s_dfb4f4bf2d506d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab10ac9f-a61a-4c4f-8ddd-4e6d75b06b0f",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
