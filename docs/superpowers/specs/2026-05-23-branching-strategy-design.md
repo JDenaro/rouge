@@ -48,7 +48,7 @@ Rationale for the three permanent branches:
 One Vercel project covers all three environments.
 
 1. **Production Branch**: change from `feature/init` to `main`. After migration, no production deploy fires until the developer merges `develop → main`.
-2. **Staging alias**: add a permanent domain alias `staging-rougeintime.vercel.app` (or similar) pinned to the `develop` branch. Every push to `develop` updates this alias atomically.
+2. **Staging alias**: add a permanent domain alias `develop.rougeintime.vercel.app` pinned to the `develop` branch. Every push to `develop` updates this alias atomically. If Vercel rejects the nested subdomain form, fall back to the flat form `develop-rougeintime.vercel.app`.
 3. **Preview deployments**: leave enabled for all branches (Vercel default). Each push to `feature/*` produces a unique preview URL Vercel surfaces in the GitHub PR comment.
 
 No second Vercel project, no environment-specific env vars yet. The project already uses a single `.env.local` for Supabase keys; Vercel's per-environment env-var support is available later if needed (e.g., separate Supabase project for staging).
@@ -147,14 +147,15 @@ Result: local has `main` (existing orphan, untouched) and `develop` (was `featur
 
 ---
 
-## Optional GitHub safeguards
+## GitHub safeguards
 
-Solo dev means most protections are overkill, but two are cheap and useful:
+Two protections are in scope (not optional):
 
-- **Auto-delete head branches**: GitHub Settings → General → Pull Requests → "Automatically delete head branches" on. Keeps the branch list clean after PR merges.
-- **Branch protection on `main`** (very light): disallow force-push and direct commits, require a PR (even self-approved) for any change. Prevents accidental `git push --force` on production.
+- **Auto-delete head branches**: GitHub Settings → General → Pull Requests → "Automatically delete head branches" on. Keeps the branch list clean after PR merges — when a `feature/*` PR is merged into `develop`, the source branch is deleted on the remote.
 
-`develop` stays unprotected — direct commits and force-pushes allowed (occasional history cleanup).
+- **Branch protection on `main`** with source-branch lock: disallow force-push and direct commits, require a PR for every change, and require a CI status check that fails any PR whose source branch is not `develop`, `feature/*`, or `hotfix/*`. The native branch protection rules in GitHub do not support source-branch matching, so this is implemented as a tiny GitHub Action (`.github/workflows/validate-main-pr-source.yml`) marked as a required status check.
+
+`develop` stays unprotected — direct commits and force-pushes allowed for history cleanup.
 
 ---
 

@@ -126,11 +126,13 @@ Vercel does not automatically redeploy when you change the Production Branch —
 
 - [ ] **Step 4.1: Pick the staging URL**
 
-Decide on a subdomain. The spec recommends `staging-rougeintime.vercel.app`. Alternatives: `staging.rougeintime.vercel.app` (Vercel may require domain verification for nested subdomains; the dash form avoids that). For now, pick the dash form unless the user explicitly prefers otherwise.
+Use `develop.rougeintime.vercel.app` (per user preference). Note: this is a **nested subdomain** under the project's auto-generated `*.vercel.app` URL. Vercel's free-tier domain settings normally allow flat `<name>.vercel.app` domains but nested forms (`<sub>.<project>.vercel.app`) sometimes fail with a "domain already in use" or "not allowed" error.
+
+If Vercel rejects the nested form, fall back to `develop-rougeintime.vercel.app` (dash form, flat subdomain) which is guaranteed to work on `*.vercel.app`. Update Step 5 of this task (CLAUDE.md doc) with the actual URL chosen.
 
 - [ ] **Step 4.2: Add the domain in Vercel**
 
-In the project's Vercel Settings → **Domains** → click **Add Domain**. Enter `staging-rougeintime.vercel.app`. Vercel will provision it under the `*.vercel.app` zone automatically (no DNS work needed for `*.vercel.app` subdomains).
+In the project's Vercel Settings → **Domains** → click **Add Domain**. Enter `develop.rougeintime.vercel.app`. If Vercel accepts it, continue. If not, retry with `develop-rougeintime.vercel.app`.
 
 - [ ] **Step 4.3: Assign the alias to the `develop` branch**
 
@@ -179,7 +181,7 @@ Three permanent branches, mapped to Vercel environments:
 | Branch | Role | Deploys to |
 |---|---|---|
 | `main` | Production trunk. Receives `develop` (or `hotfix/*`) merges only at release time. | Vercel Production environment. |
-| `develop` | Active development trunk. All `feature/*` branches merge here first. | `staging-rougeintime.vercel.app` (permanent alias). |
+| `develop` | Active development trunk. All `feature/*` branches merge here first. | `develop.rougeintime.vercel.app` (permanent alias; falls back to `develop-rougeintime.vercel.app` if the nested form is rejected). |
 | `feature/<name>` | Short-lived. Branched from `develop`, merged back via PR, then deleted. | Auto-generated Vercel preview URL per push. |
 
 **Workflow:** branch from `develop` → push → review the preview → merge PR → delete branch. Promote to production by merging `develop → main` and tagging `v<x.y.z>`.
@@ -208,35 +210,79 @@ Expected: develop is updated on the remote.
 
 ---
 
-## Task 6: Optional GitHub safeguards
+## Task 6: GitHub safeguards (auto-delete + main branch protection)
 
 **Files:**
-- None (GitHub repo settings only)
+- Create: `.github/workflows/validate-main-pr-source.yml` — CI check that fails any PR into `main` whose source branch isn't `develop`, `feature/*`, or `hotfix/*`.
 
-This task is **optional** but the spec lists two cheap safeguards. Skip this entire task if the user doesn't want it; ask before doing it.
+GitHub branch protection rules natively support "require PR" and "block force pushes", but they cannot natively restrict WHICH source branch is allowed. We enforce that with a tiny CI workflow + a required-status-check rule.
 
 - [ ] **Step 6.1: Enable auto-delete head branches**
 
-On GitHub → repo → Settings → General → scroll to "Pull Requests" → enable **"Automatically delete head branches"**.
+In a browser, go to GitHub → `JDenaro/rouge` repo → **Settings** → **General** → scroll to the "Pull Requests" section → enable **"Automatically delete head branches"**.
 
-This deletes the `feature/*` branch on the remote once its PR is merged. Local branches still need `git branch -d` manually.
+Effect: when a PR is merged (e.g. `feature/faq → develop`), GitHub deletes the source branch (`feature/faq`) from the remote. The local copy still needs `git branch -d feature/faq` manually.
 
-- [ ] **Step 6.2: Add a light branch protection rule on `main`**
+- [ ] **Step 6.2: Create the source-branch validation workflow**
 
-GitHub → repo → Settings → Branches → **Add branch ruleset** (or "Add classic branch protection rule" in older UIs).
+Create `.github/workflows/validate-main-pr-source.yml` with this exact content:
 
-- Branch name pattern: `main`
-- Enable: **Restrict deletions**
-- Enable: **Block force pushes**
-- (Optional, more strict) Require a pull request before merging: yes. Since you're solo, leave "Required approvals" at 0 — you can self-merge.
+```yaml
+name: Validate main PR source branch
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check source branch matches allowed pattern
+        run: |
+          BRANCH="${{ github.head_ref }}"
+          echo "PR source branch: $BRANCH"
+          if [[ "$BRANCH" == "develop" || "$BRANCH" =~ ^feature/ || "$BRANCH" =~ ^hotfix/ ]]; then
+            echo "✓ Source branch '$BRANCH' is allowed for main."
+            exit 0
+          fi
+          echo "✗ PRs to main must come from 'develop', 'feature/*', or 'hotfix/*'."
+          echo "  Got: '$BRANCH'"
+          exit 1
+```
+
+Commit:
+
+```bash
+mkdir -p .github/workflows
+# (paste the YAML above into the file)
+git add .github/workflows/validate-main-pr-source.yml
+git commit -m "ci: validate PR source branch on main"
+git push
+```
+
+(Run on `develop`, not on `main` — the workflow needs to exist on default-branch + on the source of any PR. Since develop is where PRs originate or chain through, that's where we add it.)
+
+- [ ] **Step 6.3: Add the branch protection rule on `main`**
+
+GitHub → repo → **Settings** → **Branches** → **Add branch ruleset** (or "Add classic branch protection rule" on older UIs).
+
+- **Branch name pattern**: `main`
+- **Restrict deletions**: enabled
+- **Block force pushes**: enabled
+- **Require a pull request before merging**: enabled
+  - Required approvals: `0` (solo dev — self-merge OK)
+  - Dismiss stale PR approvals when new commits are pushed: optional
+- **Require status checks to pass before merging**: enabled
+  - Add required check: `Validate main PR source branch / validate` (the workflow name + job name from Step 6.2). The status check needs to have run at least once before GitHub exposes it in the dropdown — if it doesn't appear, open a dummy PR `develop → main` first, let the workflow run, then return to this setting and the check will be selectable. Cancel the dummy PR after.
 
 Save the rule.
 
-Do NOT add protection to `develop` — solo dev means you'll occasionally want to force-push to clean up history.
+Do NOT add protection to `develop` — direct commits and occasional force-pushes for history cleanup are expected.
 
-- [ ] **Step 6.3: Test the protection**
+- [ ] **Step 6.4: Test the protections**
 
-From the command line, try:
+**Test 1 — Direct push to main is blocked:**
 
 ```bash
 git checkout main
@@ -244,14 +290,52 @@ git commit --allow-empty -m "test: should be blocked"
 git push
 ```
 
-Expected: GitHub rejects the push with a message about the protection rule (if you enabled "Require PR"). Roll back:
+Expected: `! [remote rejected] main -> main (protected branch hook declined)` or similar. Roll back:
 
 ```bash
 git reset --hard HEAD~1
 git checkout develop
 ```
 
-If the push succeeded, the protection isn't doing what you wanted — revisit Step 6.2.
+**Test 2 — PR from an invalid source branch fails the check:**
+
+```bash
+git checkout develop
+git checkout -b random-test-branch
+git commit --allow-empty -m "test: invalid PR source"
+git push -u origin random-test-branch
+gh pr create --base main --head random-test-branch --title "test" --body "test"
+```
+
+In the PR's "Checks" tab, expect `Validate main PR source branch / validate` to fail with the "must come from develop / feature/* / hotfix/*" error message.
+
+Clean up:
+
+```bash
+gh pr close <pr-number-from-output> --delete-branch
+git checkout develop
+git branch -D random-test-branch
+```
+
+**Test 3 — PR from a valid source passes the check:**
+
+```bash
+git checkout develop
+git checkout -b feature/test-pr-passes
+git commit --allow-empty -m "test: valid PR source"
+git push -u origin feature/test-pr-passes
+gh pr create --base main --head feature/test-pr-passes --title "test" --body "test"
+```
+
+Expected: `validate` check passes. Close and delete the PR + branch:
+
+```bash
+gh pr close <pr-number> --delete-branch
+git checkout develop
+git branch -D feature/test-pr-passes
+```
+
+If all three tests behave as expected, the protection is correctly wired.
 
 ---
 
