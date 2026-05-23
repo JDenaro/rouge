@@ -179,6 +179,15 @@ export function FAQ({ items, showCta, groupByCategory }: FAQProps) {
           opacity: 0.85;
           padding: 0 0 1.25rem;
         }
+        @media (max-width: 768px) {
+          .rouge-faq-section {
+            padding: 3.5rem 1.25rem;
+          }
+          .rouge-faq-item > summary {
+            padding: 1.5rem 2rem 1.5rem 0;
+            font-size: 1.0625rem;
+          }
+        }
       `}</style>
     </section>
   )
