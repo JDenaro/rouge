@@ -4,43 +4,97 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Static HTML e-commerce site for **Rouge Intime** — an Argentine intimate apparel brand. No build system, no package manager, no framework. Two production-ready HTML files with all CSS and JS inlined.
+Next.js e-commerce site for **Rouge Intime** — an Argentine intimate apparel brand. Built with Next.js 16 App Router, React 19, TypeScript, Tailwind CSS v4, and Supabase (PostgreSQL).
 
-## Files
+> **Important:** Read `AGENTS.md` before writing any Next.js code. This version has breaking changes from standard Next.js — APIs and conventions differ from training data.
 
-- `index.html` — main landing page (hero, categories, products, how-it-works, payments, CTA, footer)
-- `guia-de-talles.html` — standalone size guide page (linked from every "Guía de talles" button)
+## Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 16.2.6 (App Router) |
+| UI | React 19 + TypeScript |
+| Styles | Tailwind CSS v4 (`globals.css` `@theme`) |
+| Database | Supabase (PostgreSQL) |
+| Auth | JWT cookie guard via `middleware.ts` (admin only) |
+| Tests | Vitest + `@testing-library/react` |
+
+## Project structure
+
+```
+app/
+  (store)/          # customer-facing routes
+    layout.tsx
+    page.tsx          → / (home)
+    [category]/       → /:category
+    producto/[slug]/  → /producto/:slug
+    productos/        → /productos
+    checkout/
+    contacto/
+    guia-de-talles/
+    politica-de-cambios/
+  (admin)/          # protected by middleware
+    layout.tsx
+  globals.css
+  layout.tsx
+
+components/
+  store/            # Nav, Hero, CategoriesGrid, FeaturedProducts,
+                    # ProductCard, ProductGrid, Footer, HowItWorks,
+                    # Testimonials, AddToCart, CartContext, CartDrawer
+  admin/            # AdminShell
+
+lib/
+  products.ts       # getFeaturedProducts, getCategoryThumbnails, CATEGORY_META
+  auth.ts           # verifyAdminToken, ADMIN_COOKIE_NAME
+  mock-data.ts      # mock data for tests
+  admin-data.ts
+  supabase/
+    client.ts       # browser client (anon key)
+    server.ts       # server client (service role key)
+    types.ts        # Product, ProductCategory, OrderStatus, …
+
+supabase/migrations/
+middleware.ts       # redirects unauthenticated requests from /admin/** to /admin/login
+```
 
 ## Running locally
 
 ```bash
-python3 -m http.server 8000
-# then open http://localhost:8000
+npm run dev       # → http://localhost:3000
+npm run build     # production build
+npm test          # Vitest test suite
+npm run lint      # ESLint
 ```
 
-Or open the `.html` files directly in the browser via `file://` — all assets are external CDN only.
+Requires a `.env.local` with:
+
+```
+NEXT_PUBLIC_SUPABASE_URL=...
+NEXT_PUBLIC_SUPABASE_ANON_KEY=...
+SUPABASE_SERVICE_ROLE_KEY=...
+```
 
 ## Screenshotting with Playwright
 
-Playwright Python is installed. Use it to visually verify changes:
+Playwright Python is installed. **The dev server must be running** before taking screenshots.
 
 ```python
 from playwright.sync_api import sync_playwright
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=True)
     page = browser.new_page(viewport={"width": 1440, "height": 900})
-    page.goto("file:///Users/juldenarocur/Repositorios/rouge-web/index.html")
+    page.goto("http://localhost:3000")
     page.wait_for_load_state("networkidle")
-    # Force fade-in animations visible for headless screenshots:
-    page.evaluate("document.querySelectorAll('.fade-in').forEach(el=>el.classList.add('visible'));")
-    page.wait_for_timeout(500)
     page.screenshot(path="/tmp/check.png", full_page=True)
     browser.close()
 ```
 
+For mobile viewports use `{"width": 390, "height": 844}` (iPhone 14).
+
 ## Design system
 
-UI/UX decisions are driven by the **ui-ux-pro-max** skill (`https://github.com/nextlevelbuilder/ui-ux-pro-max-skill`). Before adding new pages, components, or visual styles, invoke the skill to get a consistent design system recommendation:
+UI/UX decisions are driven by the **ui-ux-pro-max** skill. Before adding new pages, components, or visual styles, invoke it for a consistent design system recommendation:
 
 ```
 /ui-ux-pro-max build <description of what you're building>
@@ -48,7 +102,7 @@ UI/UX decisions are driven by the **ui-ux-pro-max** skill (`https://github.com/n
 
 The skill provides: style (currently **Liquid Glass**), color palette, font pairing, UX rules, and anti-patterns to avoid.
 
-All design tokens live in `:root` at the top of each file:
+All design tokens are declared in `app/globals.css` under `@theme` (Tailwind v4 syntax):
 
 | Token | Value | Use |
 |---|---|---|
@@ -65,7 +119,7 @@ Animations use `--ease-out: cubic-bezier(0.22, 1, 0.36, 1)` and durations `--dur
 
 ## Product images
 
-All product and category images are served from the tiendanube CDN:
+All product and category images are served from the Tiendanube CDN:
 
 ```
 https://acdn-us.mitiendanube.com/stores/004/099/592/products/{filename}-1024-1024.webp?w=480
@@ -76,24 +130,20 @@ Use `?w=360` for category thumbnails, `?w=480` for product cards, `?w=640` for t
 
 ## Key patterns
 
-**Scroll fade-in:** Add class `fade-in` to any element. JS at bottom of each file wires IntersectionObserver. Elements start at `opacity:0; transform:translateY(22px)` and transition to visible on scroll.
-
-**Glass card:** `background: var(--color-surface); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.85); border-radius: var(--radius-lg); box-shadow: var(--shadow-card);`
-
-**Primary button:**
-```html
-<a href="..." class="btn-primary">Label <svg>→</svg></a>
-```
-
 **WhatsApp links:** Always use `https://wa.me/+541158861214?text=...` with URL-encoded pre-filled message.
 
-## Navigation between pages
+**Glass card (Tailwind):**
+```tsx
+<div className="bg-surface backdrop-blur-md border border-white/85 rounded-lg shadow-card">
+```
 
-`index.html` links to `guia-de-talles.html` (relative path). The size guide links back to `index.html`. Keep all internal hrefs as relative paths.
+**Scroll fade-in:** Apply the `fade-in` class. `globals.css` wires an IntersectionObserver — elements start at `opacity:0 translateY(22px)` and transition to visible on scroll.
+
+**Server vs. client Supabase:** Use `lib/supabase/server.ts` in Server Components and route handlers. Use `lib/supabase/client.ts` in Client Components.
 
 ## Live site pages — rougeintime.ar
 
-These are the real pages on the live Tiendanube store. Links in `index.html` point to these URLs.
+These are the real pages on the live Tiendanube store. The app links out to these URLs for purchase flows.
 
 ### Product categories
 
