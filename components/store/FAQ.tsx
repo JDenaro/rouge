@@ -7,7 +7,7 @@ import {
 } from '@/lib/faq'
 
 type FAQProps = {
-  items: FAQItem[]
+  items: readonly FAQItem[]
   showCta?: boolean
   groupByCategory?: boolean
 }
@@ -58,7 +58,7 @@ function parseAnswer(text: string): ReactNode[] {
   return out
 }
 
-function FAQList({ items }: { items: FAQItem[] }) {
+function FAQList({ items }: { items: readonly FAQItem[] }) {
   return (
     <div>
       {items.map((item) => (
