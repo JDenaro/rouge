@@ -1,0 +1,24 @@
+docs/superpowers/plans/2026-05-23-branching-strategy.md
+  s_dfb4f4bf2d506d::t_272f755923acc5 184
+  s_dfb4f4bf2d506d::t_3987393579a36e 213,216,218,222-226,228,230-231,233-252,254-277,281,283,285,293,300-338
+  s_dfb4f4bf2d506d::t_64503a087566e8 129-131,135
+docs/superpowers/specs/2026-05-23-branching-strategy-design.md
+  s_dfb4f4bf2d506d::t_26d59f4f8bf772 150,152,154,156-158
+  s_dfb4f4bf2d506d::t_25b651c8bd5427 51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "4dddf4bcf652222dcf2e6f04803d79f05d53e085",
+  "prompts": {},
+  "sessions": {
+    "s_dfb4f4bf2d506d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab10ac9f-a61a-4c4f-8ddd-4e6d75b06b0f",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
