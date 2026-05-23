@@ -1,0 +1,24 @@
+CLAUDE.md
+  s_aff94bbb23e177::t_2f2f940ca500d3 7,9,11-59,64-67,70-76,80,87,93-94,97,105,122,133,135-137,140,142,146
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "d7a0113a916689509e28335a3f31d6a36e0d0390",
+  "prompts": {},
+  "humans": {
+    "h_bcaf4f6495f2ae": {
+      "author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  },
+  "sessions": {
+    "s_aff94bbb23e177": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e213e053-f9a3-4d4d-b08c-8097b6b2bd83",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
