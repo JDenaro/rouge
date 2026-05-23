@@ -1,0 +1,24 @@
+scripts/mobile-audit.py
+  s_cda0eed622d446::t_6bc219b66989b1 1-164
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "6ed4bc116d44a3d86b2d95138060b723340ddfa6",
+  "prompts": {},
+  "humans": {
+    "h_bcaf4f6495f2ae": {
+      "author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  },
+  "sessions": {
+    "s_cda0eed622d446": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b1e34155-d3c1-447a-88b1-8127f2f487b1",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
