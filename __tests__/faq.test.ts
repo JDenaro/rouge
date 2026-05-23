@@ -4,6 +4,7 @@ import {
   FAQ_CATEGORY_LABELS,
   getFeaturedFAQ,
   groupFAQByCategory,
+  buildFAQPageSchema,
 } from '@/lib/faq'
 
 describe('FAQ data', () => {
@@ -39,5 +40,33 @@ describe('FAQ data', () => {
     FAQ_ITEMS.forEach((i) => {
       expect(i.answer.length).toBeGreaterThan(10)
     })
+  })
+})
+
+describe('buildFAQPageSchema', () => {
+  it('returns a FAQPage object with mainEntity array', () => {
+    const schema = buildFAQPageSchema(FAQ_ITEMS)
+    expect(schema['@context']).toBe('https://schema.org')
+    expect(schema['@type']).toBe('FAQPage')
+    expect(schema.mainEntity).toHaveLength(FAQ_ITEMS.length)
+  })
+
+  it('each mainEntity item has name and acceptedAnswer.text', () => {
+    const schema = buildFAQPageSchema(FAQ_ITEMS.slice(0, 3))
+    schema.mainEntity.forEach((entity, i) => {
+      expect(entity['@type']).toBe('Question')
+      expect(entity.name).toBe(FAQ_ITEMS[i].question)
+      expect(entity.acceptedAnswer['@type']).toBe('Answer')
+      expect(typeof entity.acceptedAnswer.text).toBe('string')
+      expect(entity.acceptedAnswer.text.length).toBeGreaterThan(0)
+    })
+  })
+
+  it('strips markdown-style links from answer text in schema', () => {
+    const items = [FAQ_ITEMS.find((i) => i.id === 5)!]
+    const schema = buildFAQPageSchema(items)
+    const text = schema.mainEntity[0].acceptedAnswer.text
+    expect(text).not.toMatch(/\[.*\]\(.*\)/)
+    expect(text).toContain('guía de talles')
   })
 })

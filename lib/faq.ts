@@ -137,3 +137,36 @@ export function groupFAQByCategory(): Record<FAQCategory, FAQItem[]> {
   }
   return groups
 }
+
+type FAQPageSchema = {
+  '@context': 'https://schema.org'
+  '@type': 'FAQPage'
+  mainEntity: Array<{
+    '@type': 'Question'
+    name: string
+    acceptedAnswer: {
+      '@type': 'Answer'
+      text: string
+    }
+  }>
+}
+
+// Strip markdown-style [text](url) links from a string, leaving just the text.
+function stripMarkdownLinks(input: string): string {
+  return input.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+}
+
+export function buildFAQPageSchema(items: readonly FAQItem[]): FAQPageSchema {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: stripMarkdownLinks(item.answer),
+      },
+    })),
+  }
+}
