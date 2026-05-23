@@ -1,0 +1,31 @@
+components/store/FAQ.tsx
+  s_dfb4f4bf2d506d::t_cc30770b4ca82f 75
+lib/faq.ts
+  s_dfb4f4bf2d506d::t_d60f1d3c8c0e1b 128-130,137
+__tests__/FAQ.test.tsx
+  s_dfb4f4bf2d506d::t_9181eb9b6b2879 2
+  s_dfb4f4bf2d506d::t_54334a29ac6ede 48-57
+app/(store)/faq/page.tsx
+  s_dfb4f4bf2d506d::t_cd85d7b41066ee 19-27,29-35,38-65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "361e5de2f2aacf54fc8285006b6b24f74da20f60",
+  "prompts": {},
+  "humans": {
+    "h_bcaf4f6495f2ae": {
+      "author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  },
+  "sessions": {
+    "s_dfb4f4bf2d506d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab10ac9f-a61a-4c4f-8ddd-4e6d75b06b0f",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
