@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { render, screen } from '@testing-library/react'
+import { render, screen, fireEvent } from '@testing-library/react'
 import { FAQ } from '@/components/store/FAQ'
 import { FAQ_ITEMS, getFeaturedFAQ } from '@/lib/faq'
 
@@ -44,5 +44,15 @@ describe('FAQ component', () => {
     const link = container.querySelector('a[href="/guia-de-talles"]')
     expect(link).toBeTruthy()
     expect(link?.textContent).toBe('guía de talles')
+  })
+
+  it('toggles details open attribute when summary is clicked', () => {
+    const items = FAQ_ITEMS.slice(0, 1)
+    const { container } = render(<FAQ items={items} />)
+    const details = container.querySelector('details') as HTMLDetailsElement
+    const summary = details.querySelector('summary') as HTMLElement
+    expect(details.open).toBe(false)
+    fireEvent.click(summary)
+    expect(details.open).toBe(true)
   })
 })

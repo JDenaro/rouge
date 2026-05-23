@@ -125,14 +125,16 @@ export function getFeaturedFAQ(): FAQItem[] {
   return FAQ_ITEMS.filter((i) => i.featured)
 }
 
-export function groupFAQByCategory(): Record<FAQCategory, FAQItem[]> {
+export function groupFAQByCategory(
+  items: readonly FAQItem[] = FAQ_ITEMS,
+): Record<FAQCategory, FAQItem[]> {
   const groups: Record<FAQCategory, FAQItem[]> = {
     'made-to-order': [],
     sizing: [],
     shipping: [],
     payments: [],
   }
-  for (const item of FAQ_ITEMS) {
+  for (const item of items) {
     groups[item.category].push(item)
   }
   return groups

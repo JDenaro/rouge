@@ -72,7 +72,7 @@ function FAQList({ items }: { items: readonly FAQItem[] }) {
 }
 
 export function FAQ({ items, showCta, groupByCategory }: FAQProps) {
-  const grouped = groupByCategory ? groupFAQByCategory() : null
+  const grouped = groupByCategory ? groupFAQByCategory(items) : null
 
   return (
     <section className="rouge-faq-section">
