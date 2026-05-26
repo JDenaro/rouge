@@ -19,6 +19,24 @@ Next.js e-commerce site for **Rouge Intime** — an Argentine intimate apparel b
 | Auth | JWT cookie guard via `middleware.ts` (admin only) |
 | Tests | Vitest + `@testing-library/react` |
 
+## Branching
+
+Three permanent branches, mapped to Vercel environments:
+
+| Branch | Role | Deploys to |
+|---|---|---|
+| `main` | Production trunk. Receives `develop` (or `hotfix/*`) merges only at release time. | `rougeintime.vercel.app` (Vercel Production). Currently shows the last `feature/init` build until the first `develop → main` merge. |
+| `develop` | Active development trunk. All `feature/*` branches merge here first. Default branch on GitHub. | `develop-rougeintime.vercel.app` (auto-managed Vercel preview, always serves the latest develop push). |
+| `feature/<name>` | Short-lived. Branched from `develop`, merged back via PR, then auto-deleted. | Auto-generated Vercel preview URL per push (`<branch-slug>-rougeintime.vercel.app`). |
+
+**Workflow:** branch from `develop` → push → review the preview → open a PR `feature/* → develop` → merge → branch is auto-deleted. Promote to production by opening a PR `develop → main` and merging it, then tag `v<x.y.z>` on `main`.
+
+**Hotfix:** branch `hotfix/<name>` from `main` → fix → open PRs to both `main` and `develop`.
+
+**Protections:** `main` requires a PR and a CI status check that whitelists source branches (`develop`, `feature/*`, `hotfix/*`). `develop` is unprotected (direct commits and force-pushes allowed for history cleanup).
+
+Full design: `docs/superpowers/specs/2026-05-23-branching-strategy-design.md`.
+
 ## Project structure
 
 ```
