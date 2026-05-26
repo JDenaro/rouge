@@ -1,0 +1,19 @@
+.github/workflows/validate-main-pr-source.yml
+  s_dfb4f4bf2d506d::t_778b5e82471a35 1-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "f3f4b7cfa7b4f89147ceaabaa3c46849f8b0e55c",
+  "prompts": {},
+  "sessions": {
+    "s_dfb4f4bf2d506d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab10ac9f-a61a-4c4f-8ddd-4e6d75b06b0f",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
