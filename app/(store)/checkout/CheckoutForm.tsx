@@ -24,8 +24,14 @@ export function CheckoutForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setError(null)
+    const lines = items.map(({ productId, quantity, size, color }) => ({
+      productId,
+      quantity,
+      size,
+      color,
+    }))
     startTransition(async () => {
-      const result = await createOrder(items, form)
+      const result = await createOrder(lines, form)
       if (!result.ok) {
         setError(result.error)
         return
