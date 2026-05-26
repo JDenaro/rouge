@@ -1,0 +1,21 @@
+name: Validate main PR source branch
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check source branch matches allowed pattern
+        run: |
+          BRANCH="${{ github.head_ref }}"
+          echo "PR source branch: $BRANCH"
+          if [[ "$BRANCH" == "develop" || "$BRANCH" =~ ^feature/ || "$BRANCH" =~ ^hotfix/ ]]; then
+            echo "✓ Source branch '$BRANCH' is allowed for main."
+            exit 0
+          fi
+          echo "✗ PRs to main must come from 'develop', 'feature/*', or 'hotfix/*'."
+          echo "  Got: '$BRANCH'"
+          exit 1
