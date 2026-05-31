@@ -88,7 +88,7 @@ export default function ContactoPage() {
           title="Instagram"
           subtitle="Novedades y looks"
           value="@rougeintime.ar"
-          href="https://instagram.com/rougeintime.ar"
+          href="https://www.instagram.com/rougeintime"
         />
       </div>
 

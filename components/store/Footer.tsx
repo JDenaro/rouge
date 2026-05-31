@@ -86,7 +86,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://instagram.com/rougeintime.ar"
+                  href="https://www.instagram.com/rougeintime"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={footerLink}
