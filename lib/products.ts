@@ -26,6 +26,27 @@ export const CATEGORY_META: Record<
   'panty-vedetina-culotte': { label: 'Panties', description: 'Vedetinas y culottes' },
 }
 
+export type CategorySizesConfig = {
+  corpino: boolean
+  pantalon: boolean
+  aMedida: boolean
+}
+
+export const CATEGORY_SIZES: Record<ProductCategory, CategorySizesConfig> = {
+  sets:                     { corpino: true,  pantalon: true,  aMedida: true  },
+  'baby-doll':              { corpino: true,  pantalon: true,  aMedida: true  },
+  body:                     { corpino: true,  pantalon: true,  aMedida: true  },
+  catsuit:                  { corpino: true,  pantalon: true,  aMedida: true  },
+  conjuntos:                { corpino: true,  pantalon: true,  aMedida: true  },
+  corsets:                  { corpino: true,  pantalon: true,  aMedida: true  },
+  bata:                     { corpino: true,  pantalon: true,  aMedida: true  },
+  pijamas:                  { corpino: true,  pantalon: true,  aMedida: true  },
+  disfraces:                { corpino: true,  pantalon: true,  aMedida: true  },
+  'panty-vedetina-culotte': { corpino: false, pantalon: true,  aMedida: true  },
+  sexshop:                  { corpino: false, pantalon: false, aMedida: false },
+  'perfume-feromonas':      { corpino: false, pantalon: false, aMedida: false },
+}
+
 export const VALID_CATEGORIES = Object.keys(CATEGORY_META) as ProductCategory[]
 
 export function isValidCategory(s: string): s is ProductCategory {

@@ -12,8 +12,6 @@ import {
 } from '@/lib/products'
 import { formatARS } from '@/lib/mock-data'
 
-const DEFAULT_SIZES = ['85', '90', '95', '100', '105', '110', '115', '120']
-
 export async function generateMetadata({
   params,
 }: {
@@ -45,7 +43,6 @@ export default async function ProductPage({
   const related = await getRelatedProducts(product.category, product.slug, 4)
   const tPrice = transferPrice(product.price)
   const image = product.images?.[0] ?? ''
-  const sizes = product.sizes.length > 0 ? product.sizes : DEFAULT_SIZES
   const colors = product.colors
 
   const categoryMeta = isValidCategory(product.category)
@@ -225,7 +222,7 @@ export default async function ProductPage({
             name={product.name}
             price={product.price}
             image={image}
-            sizes={sizes}
+            category={product.category}
             colors={colors}
           />
 
