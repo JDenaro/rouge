@@ -1,0 +1,31 @@
+components/store/AddToCart.tsx
+  s_dbea5368bdd76a::t_2ed41b3b91b000 102-107,109
+  s_dbea5368bdd76a::t_d3d766c9a146a0 5-17,25,29,31-38,40,44-46,48-49,51-54,59-62,64,69-75,78-101,110-161,169,179,182,185,192,201,225-233,235-253,255-256,258-261,263-264,266-284
+  s_dbea5368bdd76a::t_21135fd778fbb4 50
+app/(store)/producto/[slug]/page.tsx
+  s_dbea5368bdd76a::t_d02d0d0e1f84d9 225
+docs/superpowers/specs/2026-05-30-size-selector-redesign.md
+  s_dbea5368bdd76a::t_8656582fa76e70 1-131
+docs/superpowers/plans/2026-05-30-size-selector-redesign.md
+  s_dbea5368bdd76a::t_c8c77c08cbdc10 1-667
+__tests__/size-selector.test.tsx
+  s_dbea5368bdd76a::t_3b2a31bd9dd187 1-157
+lib/products.ts
+  s_dbea5368bdd76a::t_4da80015da7448 29-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "d628ec1a49f56da6d3235bee83830320b9da0350",
+  "prompts": {},
+  "sessions": {
+    "s_dbea5368bdd76a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3c24a62c-f465-4863-b473-f57b262894e9",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
