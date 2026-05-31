@@ -83,14 +83,14 @@ export default async function ProductPage({
         style={{
           display: 'grid',
           gridTemplateColumns: '1.1fr 1fr',
-          gap: '3rem',
-          alignItems: 'stretch',
-          height: 'calc(100vh - 10rem)',
+          gap: '3.5rem',
+          alignItems: 'flex-start',
         }}
       >
         <div
           style={{
             position: 'relative',
+            aspectRatio: '3 / 4',
             borderRadius: 'var(--radius-lg)',
             overflow: 'hidden',
             background: 'rgba(192, 68, 90, 0.04)',
@@ -119,7 +119,7 @@ export default async function ProductPage({
           )}
         </div>
 
-        <div className="rouge-product-info" style={{ overflowY: 'auto', paddingRight: '0.25rem' }}>
+        <div>
           <p
             style={{
               fontFamily: 'var(--font-body)',
@@ -136,10 +136,10 @@ export default async function ProductPage({
           <h1
             style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 'clamp(1.75rem, 3vw, 2.25rem)',
+              fontSize: 'clamp(2rem, 4vw, 2.75rem)',
               fontWeight: 500,
               margin: 0,
-              marginBottom: '0.75rem',
+              marginBottom: '1.25rem',
               lineHeight: 1.1,
               color: 'var(--color-fg)',
             }}
@@ -177,14 +177,14 @@ export default async function ProductPage({
               color: 'var(--color-fg)',
               opacity: 0.65,
               marginTop: 0,
-              marginBottom: '1rem',
+              marginBottom: '2rem',
             }}
           >
             Pagando por transferencia. O hasta 3 cuotas sin interés con MercadoPago.
           </p>
 
           {product.description && (
-            <div style={{ marginBottom: '1rem' }}>
+            <div style={{ marginBottom: '2rem' }}>
               <h3
                 style={{
                   fontFamily: 'var(--font-body)',
@@ -272,11 +272,6 @@ export default async function ProductPage({
           .rouge-product-detail {
             grid-template-columns: 1fr !important;
             gap: 2rem !important;
-            height: auto !important;
-            align-items: flex-start !important;
-          }
-          .rouge-product-info {
-            overflow-y: visible !important;
           }
         }
       `}</style>
