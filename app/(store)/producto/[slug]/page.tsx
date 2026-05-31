@@ -82,8 +82,8 @@ export default async function ProductPage({
         className="rouge-product-detail"
         style={{
           display: 'grid',
-          gridTemplateColumns: '30% 1fr',
-          gap: '3rem',
+          gridTemplateColumns: '1.1fr 1fr',
+          gap: '3.5rem',
           alignItems: 'flex-start',
         }}
       >
