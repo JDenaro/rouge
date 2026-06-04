@@ -1,0 +1,19 @@
+app/(store)/producto/[slug]/page.tsx
+  s_a0f0da580bc243::t_3f1dc731d4a8eb 208
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "ab0f93261ff10a1aded044b1d1165205cde0a301",
+  "prompts": {},
+  "sessions": {
+    "s_a0f0da580bc243": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "04766475-8bb0-4b27-851a-e06a679b71cd",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
