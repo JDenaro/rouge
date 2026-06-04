@@ -85,7 +85,6 @@ export default async function ProductPage({
           gridTemplateColumns: '1.1fr 1fr',
           gap: '3rem',
           alignItems: 'stretch',
-          height: 'calc(100vh - 10rem)',
         }}
       >
         <div
@@ -95,17 +94,20 @@ export default async function ProductPage({
             overflow: 'hidden',
             background: 'rgba(192, 68, 90, 0.04)',
             boxShadow: 'var(--shadow-card)',
+            minHeight: '520px',
           }}
         >
           {image ? (
-            <div
-              aria-hidden
+            <img
+              src={image}
+              alt={product.name}
               style={{
                 position: 'absolute',
                 inset: 0,
-                backgroundImage: `url('${image}')`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                objectPosition: 'center',
               }}
             />
           ) : (
@@ -119,7 +121,7 @@ export default async function ProductPage({
           )}
         </div>
 
-        <div className="rouge-product-info" style={{ overflowY: 'auto', paddingRight: '0.25rem' }}>
+        <div className="rouge-product-info">
           <p
             style={{
               fontFamily: 'var(--font-body)',
@@ -272,11 +274,10 @@ export default async function ProductPage({
           .rouge-product-detail {
             grid-template-columns: 1fr !important;
             gap: 2rem !important;
-            height: auto !important;
             align-items: flex-start !important;
           }
-          .rouge-product-info {
-            overflow-y: visible !important;
+          .rouge-product-detail > div:first-child {
+            min-height: 320px !important;
           }
         }
       `}</style>
