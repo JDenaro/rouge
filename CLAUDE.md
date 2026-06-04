@@ -196,3 +196,7 @@ These are the real pages on the live Tiendanube store. The app links out to thes
 - WhatsApp: `+541158861214`
 - Email: `rougeintimelenceria@gmail.com`
 - Instagram: `rougeintime.ar`
+
+## Changelog
+
+`memory.md` en la raíz del proyecto registra todos los cambios significativos realizados con Claude Code: fecha, archivos afectados y descripción. **Actualizarlo siempre que se completen cambios relevantes** — es la fuente de verdad para entender qué fue modificado y por qué, sin tener que leer el git log.
