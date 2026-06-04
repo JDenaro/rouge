@@ -1,0 +1,11 @@
+memory.md
+  ai_agent 1-55
+CLAUDE.md
+  ai_agent 199-202
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "c29d6c10500f2e26e3abea766504b5f7679cf737",
+  "prompts": {}
+}
