@@ -29,12 +29,16 @@ export function ProductGrid({ products }: { products: Product[] }) {
       <style>{`
         .rouge-product-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+          grid-template-columns: repeat(4, 1fr);
           gap: 1.25rem;
+        }
+        @media (max-width: 1024px) {
+          .rouge-product-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
         }
         @media (max-width: 640px) {
           .rouge-product-grid {
-            grid-template-columns: repeat(2, 1fr);
             gap: 0.75rem;
           }
         }
