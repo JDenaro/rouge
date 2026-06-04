@@ -190,20 +190,10 @@ export default async function ProductPage({
             </div>
           )}
 
-          <AddToCart
-            productId={product.id}
-            slug={product.slug}
-            name={product.name}
-            price={product.price}
-            image={image}
-            category={product.category}
-            colors={colors}
-          />
-
           <div
             style={{
-              marginTop: '2rem',
-              padding: '1rem 1.25rem',
+              marginBottom: '1.25rem',
+              padding: '0.875rem 1.25rem',
               background: 'rgba(192, 68, 90, 0.04)',
               borderRadius: 'var(--radius-md)',
               borderLeft: '2px solid var(--color-primary)',
@@ -214,12 +204,22 @@ export default async function ProductPage({
               opacity: 0.85,
             }}
           >
-            <strong style={{ color: 'var(--color-primary)' }}>Hecho a medida.</strong> Cada
-            pieza se confecciona luego de tu compra. Tiempo de producción: 15–20 días hábiles.{' '}
+            <strong style={{ color: 'var(--color-primary)' }}>⏱ Tiempo de producción: 15–20 días hábiles.</strong>{' '}
+            Cada pieza se confecciona luego de tu compra.{' '}
             <Link href="/guia-de-talles" style={{ color: 'var(--color-primary)' }}>
               Ver guía de talles →
             </Link>
           </div>
+
+          <AddToCart
+            productId={product.id}
+            slug={product.slug}
+            name={product.name}
+            price={product.price}
+            image={image}
+            category={product.category}
+            colors={colors}
+          />
         </div>
       </div>
 
