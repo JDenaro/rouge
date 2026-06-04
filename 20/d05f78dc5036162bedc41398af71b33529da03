@@ -1,0 +1,9 @@
+components/store/ProductCard.tsx
+  ai_agent 31-47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "20d05f78dc5036162bedc41398af71b33529da03",
+  "prompts": {}
+}
