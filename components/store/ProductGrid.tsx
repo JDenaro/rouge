@@ -32,13 +32,14 @@ export function ProductGrid({ products }: { products: Product[] }) {
           grid-template-columns: repeat(4, 1fr);
           gap: 1.25rem;
         }
-        @media (max-width: 1024px) {
+        @media (max-width: 1023px) {
           .rouge-product-grid {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
           }
         }
-        @media (max-width: 640px) {
+        @media (max-width: 639px) {
           .rouge-product-grid {
+            grid-template-columns: repeat(2, 1fr);
             gap: 0.75rem;
           }
         }
