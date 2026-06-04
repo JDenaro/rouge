@@ -205,7 +205,7 @@ export default async function ProductPage({
             }}
           >
             <strong style={{ color: 'var(--color-primary)' }}>⏱ Tiempo de producción: 15–20 días hábiles.</strong>{' '}
-            Cada pieza se confecciona luego de tu compra.{' '}
+            Cada pieza se confecciona para vos luego de tu compra.{' '}
             <Link href="/guia-de-talles" style={{ color: 'var(--color-primary)' }}>
               Ver guía de talles →
             </Link>
