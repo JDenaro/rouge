@@ -35,6 +35,52 @@ Registro cronológico de cambios significativos realizados con Claude Code. Cada
 
 ---
 
+## 2026-06-04
+
+### Security S1 — Auth guard en admin server actions
+**Archivos:** `app/(admin)/admin/productos/actions.ts`, `app/(admin)/admin/ordenes/actions.ts`
+- Agregado `requireAdmin()` al inicio de cada action: verifica cookie + JWT antes de ejecutar
+- Protege `toggleProductActive`, `updateProductPrice`, `updateOrderStatus`
+- El middleware solo protege navegación de páginas; las actions son endpoints POST independientes
+
+### UX — Contacto: eliminado email, solo WhatsApp e Instagram
+**Archivos:** `app/(store)/contacto/page.tsx`, `components/store/Footer.tsx`
+- Removida tarjeta Email de la página de contacto
+- Removido link `mailto:` del footer
+- Handle de Instagram corregido a `@rougeintime` (sin `.ar`)
+- Texto del subtítulo actualizado: "escribinos por WhatsApp o Instagram"
+
+### UX — Tiempo de producción movido antes del CTA
+**Archivo:** `app/(store)/producto/[slug]/page.tsx`
+- Bloque "⏱ Tiempo de producción: 15–20 días hábiles" movido antes del AddToCart
+- Texto actualizado: aplica a todos los productos, no solo "hecho a medida"
+- Copy personalizado: "Cada pieza se confecciona para vos luego de tu compra"
+
+### Feature — Galería de imágenes en página de producto
+**Archivos:** `components/store/ProductGallery.tsx` (nuevo), `app/(store)/producto/[slug]/page.tsx`
+- Nuevo Client Component con estado `activeIndex`
+- Con 1 imagen: idéntico al comportamiento anterior (thumbnails no se renderizan)
+- Con 2+ imágenes: strip de thumbnails 72×72px con borde primario en el activo
+- La galería aparece automáticamente cuando se agreguen imágenes en Supabase
+
+### Feature — Política de cambios en desktop nav + contenido expandido
+**Archivos:** `components/store/Nav.tsx`, `app/(store)/politica-de-cambios/page.tsx`
+- Link "Política de cambios" agregado a la derecha del desktop nav (opacidad 0.6, secundario)
+- Mobile drawer y footer ya tenían el link
+- Página expandida de 5 a 8 secciones con contenido completo del sitio real (Ley 24.240, logística, responsabilidad del comprador)
+
+### UX — Testimonios con avatar
+**Archivo:** `components/store/Testimonials.tsx`
+- Círculo con inicial del nombre agregado al footer de cada card de reseña
+- Gradientes de marca: rose (#C0445A→#d4697c), vino (#9B3A6E→#C0445A), dorado (#D97706→#C0445A)
+
+### UX — Grid de catálogo: 4 col desktop, 3 tablet, 2 mobile
+**Archivo:** `components/store/ProductGrid.tsx`
+- Reemplazado `auto-fit, minmax(220px, 1fr)` por breakpoints explícitos
+- ≥1024px: 4 columnas | 640–1023px: 3 columnas | <640px: 2 columnas
+
+---
+
 ## 2026-05-30 / 2026-05-31
 
 ### Fix — Selector de talles rediseñado (category-aware)
