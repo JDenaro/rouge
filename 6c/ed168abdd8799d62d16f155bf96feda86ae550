@@ -1,0 +1,21 @@
+components/store/Nav.tsx
+  s_a0f0da580bc243::t_fcb6b9969a0f27 150-165
+app/(store)/politica-de-cambios/page.tsx
+  s_a0f0da580bc243::t_f38c87956203a7 52,54-66,72,76-78,81-82,85-88,91,94,97-101,104-106,113,115-126,128-130,132-140,144-157,174-179
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "6ced168abdd8799d62d16f155bf96feda86ae550",
+  "prompts": {},
+  "sessions": {
+    "s_a0f0da580bc243": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "04766475-8bb0-4b27-851a-e06a679b71cd",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
