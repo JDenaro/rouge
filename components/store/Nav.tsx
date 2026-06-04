@@ -147,7 +147,22 @@ export function Nav() {
             ))}
           </nav>
 
-          <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+          <div style={{ display: 'flex', gap: '1.25rem', alignItems: 'center' }}>
+            <Link
+              href="/politica-de-cambios"
+              className="rouge-nav-link rouge-nav-secondary"
+              style={{
+                fontFamily: 'var(--font-body)',
+                fontSize: '0.8125rem',
+                fontWeight: 500,
+                color: 'var(--color-fg)',
+                textDecoration: 'none',
+                opacity: 0.6,
+                ...(isActive('/politica-de-cambios') ? { ...activeLinkStyle, opacity: 1 } : {}),
+              }}
+            >
+              Política de cambios
+            </Link>
             <button
               type="button"
               aria-label={`Carrito (${count} productos)`}

@@ -49,66 +49,112 @@ export default function PoliticaPage() {
         para que ambas partes tengan tranquilidad.
       </p>
 
-      <Section title="Producción">
+      <Section title="Productos confeccionados a pedido">
         <p style={pStyle}>
-          Todas las prendas son <strong>hechas a pedido</strong> luego de confirmar tu compra.
-          Tiempo estimado de producción: <strong>15 a 20 días hábiles</strong> desde la
-          confirmación de pago.
+          Todos los artículos se elaboran <strong>personalizadamente</strong> tras confirmar y
+          abonar la compra. No existe stock previo. Las imágenes en web y redes son
+          referenciales; pueden existir leves variaciones en tonalidades, texturas o
+          terminaciones sin que ello constituya un defecto.
+        </p>
+        <p style={pStyle}>
+          <strong>Tiempo de producción:</strong> aproximadamente{' '}
+          <strong>15 a 20 días hábiles</strong> desde la confirmación de pago (plazo
+          orientativo, no garantizado).
+        </p>
+        <p style={{ ...pStyle, marginBottom: 0 }}>
+          Si el paquete retorna por dirección incorrecta, ausencia reiterada u otras causas
+          atribuibles al comprador, el reenvío corre por su cuenta.
         </p>
       </Section>
 
       <Section title="Devoluciones">
         <p style={pStyle}>
-          No se aceptan devoluciones por arrepentimiento una vez iniciada la producción.
+          No se aceptan devoluciones por arrepentimiento una vez iniciada la confección.
         </p>
         <ul style={ulStyle}>
           <li>
-            <strong>Antes de iniciar la producción:</strong> se aplica un cargo del 45% por
-            materiales y mano de obra ya utilizados.
+            <strong>Arrepentimiento previo al despacho:</strong> se devuelve el importe
+            restando gastos de confección, materiales e insumos (aproximadamente el{' '}
+            <strong>45% del valor del producto</strong>).
           </li>
           <li>
-            <strong>Imposibilidad de producción:</strong> reembolso del 100% si por motivos
-            propios no podemos confeccionar tu pieza.
+            <strong>Imposibilidad de confección:</strong> si por motivos propios no podemos
+            confeccionar tu pieza, se ofrece alternativa o reintegro del 100%.
           </li>
         </ul>
+        <p style={{ ...pStyle, marginBottom: 0 }}>
+          La devolución se procesa únicamente tras recibir el producto. El plazo para
+          solicitar es de <strong>3 días hábiles</strong> desde la recepción.
+        </p>
       </Section>
 
-      <Section title="Cambios por defectos">
+      <Section title="Cambios por defectos de fabricación">
         <p style={pStyle}>Aplican únicamente para defectos de fabricación comprobables.</p>
         <p style={{ ...pStyle, marginBottom: '0.75rem' }}>
-          <strong>No aplican:</strong>
+          <strong>No constituyen motivo válido:</strong>
         </p>
         <ul style={ulStyle}>
-          <li>Costuras menores o desgaste por uso</li>
-          <li>Discrepancias de talle (es responsabilidad consultar la guía antes de comprar)</li>
+          <li>Descosturas simples o desgaste por uso</li>
+          <li>
+            Diferencias de talle (es responsabilidad del comprador consultar la guía de
+            talles antes de comprar)
+          </li>
           <li>Cambio de opinión sobre la pieza</li>
         </ul>
-        <p style={pStyle}>
-          El nuevo pedido requiere un ciclo de producción completo (15–20 días) desde la
-          recepción de la prenda original.
+        <p style={{ ...pStyle, marginBottom: 0 }}>
+          El nuevo pedido requiere un ciclo de producción completo de{' '}
+          <strong>15 a 20 días hábiles</strong> desde la recepción de la prenda original.
         </p>
       </Section>
 
       <Section title="Reclamos">
         <p style={pStyle}>
           Tenés <strong>3 días hábiles</strong> luego de recibir el paquete para iniciar un
-          reclamo.
+          reclamo. Necesitamos:
         </p>
-        <p style={{ ...pStyle, marginBottom: '0.75rem' }}>Necesitamos:</p>
-        <ul style={ulStyle}>
-          <li>Foto de la etiqueta impresa del pedido (debajo de la etiqueta de envío)</li>
-          <li>Video sin editar del momento de apertura del paquete</li>
+        <ul style={{ ...ulStyle, marginBottom: 0 }}>
+          <li>Foto de la orden impresa con número y nombre (debajo de la etiqueta de envío)</li>
+          <li>Video de apertura del paquete sin cortes ni edición</li>
         </ul>
+      </Section>
+
+      <Section title="Condiciones del producto a devolver o cambiar">
+        <p style={pStyle}>La prenda debe estar:</p>
+        <ul style={{ ...ulStyle, marginBottom: 0 }}>
+          <li>Sin uso</li>
+          <li>Sin alteraciones, roturas, manchas ni modificaciones</li>
+          <li>Con envoltorio y etiquetas originales intactos</li>
+        </ul>
+      </Section>
+
+      <Section title="Logística y costos de envío">
         <p style={pStyle}>
-          La prenda debe estar sin uso, sin alteraciones, con etiquetas y packaging original
-          intactos.
+          Los gastos de envío de devolución corren por cuenta del comprador.
+        </p>
+        <p style={pStyle}>Alternativas sin costo adicional:</p>
+        <ul style={ulStyle}>
+          <li>Retiro o entrega en taller en Morón, Buenos Aires (con cita previa)</li>
+          <li>Punto de encuentro coordinado</li>
+        </ul>
+        <p style={{ ...pStyle, marginBottom: 0 }}>
+          Si solicitás envío de reposición a domicilio, ese costo corre por tu cuenta.
         </p>
       </Section>
 
-      <Section title="Envíos y devoluciones">
-        <p style={pStyle}>
-          Los gastos de envío de devolución corren por cuenta del comprador. Opcionalmente
-          podés acercarla en persona al taller en Morón, Buenos Aires (con cita previa).
+      <Section title="Responsabilidad del comprador">
+        <p style={{ ...pStyle, marginBottom: 0 }}>
+          El comprador es responsable de verificar la exactitud de sus datos (nombre,
+          dirección, teléfono, mail). Rouge Intime no se responsabiliza por errores en la
+          información provista.
+        </p>
+      </Section>
+
+      <Section title="Marco legal">
+        <p style={{ ...pStyle, marginBottom: 0 }}>
+          Esta política está enmarcada en la normativa argentina:{' '}
+          <strong>Ley 24.240 de Defensa del Consumidor</strong> y el{' '}
+          <strong>Código Civil y Comercial de la Nación</strong>. Al confirmar la compra,
+          el cliente adhiere a las cláusulas generales de esta política.
         </p>
       </Section>
 
@@ -125,7 +171,12 @@ export default function PoliticaPage() {
         }}
       >
         ¿Tenés dudas sobre tu compra? Escribinos por{' '}
-        <a href="https://wa.me/+541158861214" style={{ color: 'var(--color-primary)' }} target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://wa.me/+541158861214"
+          style={{ color: 'var(--color-primary)' }}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           WhatsApp
         </a>{' '}
         o desde la{' '}
