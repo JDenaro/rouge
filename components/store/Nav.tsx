@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
 import { useCart } from '@/components/store/CartContext'
 
 const NAV_LINKS = [
@@ -27,6 +28,19 @@ export function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [drawerOpen, setDrawerOpen] = useState(false)
   const { openCart, count } = useCart()
+  const pathname = usePathname()
+
+  const isActive = (href: string) => {
+    if (href === '/productos') return pathname === '/productos'
+    return pathname === href || pathname.startsWith(href + '/')
+  }
+
+  const activeLinkStyle = {
+    color: 'var(--color-primary)',
+    fontWeight: 600,
+    borderBottom: '2px solid var(--color-primary)',
+    paddingBottom: '2px',
+  }
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
@@ -125,6 +139,7 @@ export function Nav() {
                   fontWeight: 500,
                   color: 'var(--color-fg)',
                   textDecoration: 'none',
+                  ...(isActive(link.href) ? activeLinkStyle : {}),
                 }}
               >
                 {link.label}
@@ -260,6 +275,7 @@ export function Nav() {
                         fontWeight: 500,
                         color: 'var(--color-fg)',
                         textDecoration: 'none',
+                        ...(isActive(link.href) ? { color: 'var(--color-primary)', fontWeight: 700 } : {}),
                       }}
                     >
                       {link.label}
