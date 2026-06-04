@@ -28,18 +28,23 @@ export function ProductCard({ product }: { product: Product }) {
             background: 'rgba(192, 68, 90, 0.04)',
           }}
         >
-          <div
-            aria-hidden
-            className="rouge-prod-img"
-            style={{
-              position: 'absolute',
-              inset: 0,
-              backgroundImage: image ? `url('${image}')` : undefined,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              transition: 'transform var(--dur-slow) var(--ease-out)',
-            }}
-          />
+          {image && (
+            <img
+              src={image}
+              alt={product.name}
+              className="rouge-prod-img"
+              loading="lazy"
+              style={{
+                position: 'absolute',
+                inset: 0,
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                objectPosition: 'center',
+                transition: 'transform var(--dur-slow) var(--ease-out)',
+              }}
+            />
+          )}
           <span
             style={{
               position: 'absolute',
