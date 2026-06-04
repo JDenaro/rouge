@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { AddToCart } from '@/components/store/AddToCart'
 import { ProductGrid } from '@/components/store/ProductGrid'
+import { ProductGallery } from '@/components/store/ProductGallery'
 import {
   CATEGORY_META,
   getProductBySlug,
@@ -87,39 +88,10 @@ export default async function ProductPage({
           alignItems: 'stretch',
         }}
       >
-        <div
-          style={{
-            position: 'relative',
-            borderRadius: 'var(--radius-lg)',
-            overflow: 'hidden',
-            background: 'rgba(192, 68, 90, 0.04)',
-            boxShadow: 'var(--shadow-card)',
-            minHeight: '520px',
-          }}
-        >
-          {image ? (
-            <img
-              src={image}
-              alt={product.name}
-              style={{
-                position: 'absolute',
-                inset: 0,
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                objectPosition: 'center',
-              }}
-            />
-          ) : (
-            <div
-              style={{
-                position: 'absolute',
-                inset: 0,
-                background: 'linear-gradient(135deg, rgba(192, 68, 90, 0.1), rgba(236, 72, 153, 0.05))',
-              }}
-            />
-          )}
-        </div>
+        <ProductGallery
+          images={product.images ?? []}
+          productName={product.name}
+        />
 
         <div className="rouge-product-info">
           <p
