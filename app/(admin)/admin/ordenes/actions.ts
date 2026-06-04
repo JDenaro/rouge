@@ -1,12 +1,21 @@
 'use server'
 
+import { cookies } from 'next/headers'
 import { revalidatePath } from 'next/cache'
 import { createServerClient } from '@/lib/supabase/server'
+import { verifyAdminToken, ADMIN_COOKIE_NAME } from '@/lib/auth'
 import type { OrderStatus } from '@/lib/supabase/types'
+
+async function requireAdmin() {
+  const token = (await cookies()).get(ADMIN_COOKIE_NAME)?.value
+  const session = token ? await verifyAdminToken(token) : null
+  if (!session) throw new Error('No autorizado')
+}
 
 const VALID: OrderStatus[] = ['pending', 'paid', 'processing', 'shipped', 'delivered', 'cancelled']
 
 export async function updateOrderStatus(id: string, status: string) {
+  await requireAdmin()
   if (!(VALID as string[]).includes(status)) {
     return { ok: false as const, error: 'Estado inválido' }
   }

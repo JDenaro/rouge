@@ -1,9 +1,18 @@
 'use server'
 
+import { cookies } from 'next/headers'
 import { revalidatePath } from 'next/cache'
 import { createServerClient } from '@/lib/supabase/server'
+import { verifyAdminToken, ADMIN_COOKIE_NAME } from '@/lib/auth'
+
+async function requireAdmin() {
+  const token = (await cookies()).get(ADMIN_COOKIE_NAME)?.value
+  const session = token ? await verifyAdminToken(token) : null
+  if (!session) throw new Error('No autorizado')
+}
 
 export async function toggleProductActive(id: string, active: boolean) {
+  await requireAdmin()
   const supabase = createServerClient()
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const { error } = await (supabase.from('products') as any)
@@ -19,6 +28,7 @@ export async function toggleProductActive(id: string, active: boolean) {
 }
 
 export async function updateProductPrice(id: string, price: number) {
+  await requireAdmin()
   if (!Number.isFinite(price) || price < 0) {
     return { ok: false as const, error: 'Precio inválido' }
   }
