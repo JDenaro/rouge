@@ -8,17 +8,11 @@ import {
   isValidCategory,
 } from '@/lib/products'
 import type { ProductCategory } from '@/lib/supabase/types'
+import { SortSelect } from './SortSelect'
 
 type SearchParams = {
   cat?: string
   orden?: string
-}
-
-const SORT_LABELS: Record<string, string> = {
-  '': 'Más recientes',
-  name: 'Nombre',
-  'price-asc': 'Precio: menor a mayor',
-  'price-desc': 'Precio: mayor a menor',
 }
 
 export const dynamic = 'force-dynamic'
@@ -44,7 +38,7 @@ export default async function ProductosPage({
 
   return (
     <div style={{ padding: '7rem 1.5rem 4rem', maxWidth: '1280px', margin: '0 auto' }}>
-      <header style={{ marginBottom: '2.5rem' }}>
+      <header style={{ marginBottom: '2rem' }}>
         <p
           style={{
             fontFamily: 'var(--font-body)',
@@ -70,130 +64,95 @@ export default async function ProductosPage({
         >
           {cat ? CATEGORY_META[cat].label : 'Todo Rouge'}
         </h1>
-        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.875rem', color: 'var(--color-fg)', opacity: 0.6, marginTop: '0.5rem' }}>
-          {products.length} {products.length === 1 ? 'producto' : 'productos'}
-          {cat ? '' : ` · ${total} en total`}
-        </p>
       </header>
 
+      {/* Category chips row */}
       <div
         style={{
-          display: 'grid',
-          gridTemplateColumns: '220px 1fr',
-          gap: '2.5rem',
-          alignItems: 'flex-start',
+          display: 'flex',
+          gap: '0.5rem',
+          overflowX: 'auto',
+          paddingBottom: '0.5rem',
+          marginBottom: '1.25rem',
+          scrollbarWidth: 'none',
         }}
-        className="rouge-catalog-layout"
+        className="rouge-chips-row"
       >
-        <aside className="rouge-catalog-aside">
-          <div style={{ marginBottom: '2rem' }}>
-            <h3 style={asideTitle}>Categorías</h3>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-              <li>
-                <Link href={`/productos${sort ? `?orden=${sort}` : ''}`} style={asideLink(!cat)}>
-                  Todas <span style={asideCount}>({total})</span>
-                </Link>
-              </li>
-              {VALID_CATEGORIES.map((c) => {
-                const count = counts[c] ?? 0
-                if (!count) return null
-                const isActive = cat === c
-                const href = `/productos?cat=${c}${sort ? `&orden=${sort}` : ''}`
-                return (
-                  <li key={c}>
-                    <Link href={href} style={asideLink(isActive)}>
-                      {CATEGORY_META[c].label} <span style={asideCount}>({count})</span>
-                    </Link>
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
+        {/* "Todos" chip */}
+        <Link
+          href={sort ? `/productos?orden=${sort}` : '/productos'}
+          style={chipStyle(!cat)}
+        >
+          Todas{' '}
+          <span style={{ opacity: 0.65, fontSize: '0.75rem' }}>{total}</span>
+        </Link>
 
-          <div>
-            <h3 style={asideTitle}>Ordenar por</h3>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-              {Object.entries(SORT_LABELS).map(([key, label]) => {
-                const isActive = (sort ?? '') === key
-                const params = new URLSearchParams()
-                if (cat) params.set('cat', cat)
-                if (key) params.set('orden', key)
-                const href = `/productos${params.toString() ? `?${params}` : ''}`
-                return (
-                  <li key={key}>
-                    <Link href={href} style={asideLink(isActive)}>
-                      {label}
-                    </Link>
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
-        </aside>
-
-        <section>
-          <ProductGrid products={products} />
-        </section>
+        {VALID_CATEGORIES.map((c) => {
+          const count = counts[c] ?? 0
+          if (!count) return null
+          const isActive = cat === c
+          const href = `/productos?cat=${c}${sort ? `&orden=${sort}` : ''}`
+          return (
+            <Link key={c} href={href} style={chipStyle(isActive)}>
+              {CATEGORY_META[c].label}{' '}
+              <span style={{ opacity: 0.65, fontSize: '0.75rem' }}>{count}</span>
+            </Link>
+          )
+        })}
       </div>
 
+      {/* Count + sort bar */}
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          marginBottom: '1.75rem',
+          gap: '1rem',
+        }}
+      >
+        <p
+          style={{
+            fontFamily: 'var(--font-body)',
+            fontSize: '0.875rem',
+            color: 'var(--color-fg)',
+            opacity: 0.6,
+            margin: 0,
+          }}
+        >
+          {products.length} {products.length === 1 ? 'producto' : 'productos'}
+        </p>
+
+        <SortSelect currentSort={sort ?? ''} currentCat={cat ?? ''} />
+      </div>
+
+      <ProductGrid products={products} />
+
       <style>{`
-        @media (max-width: 768px) {
-          .rouge-catalog-layout {
-            grid-template-columns: 1fr !important;
-            gap: 1.5rem !important;
-          }
-          .rouge-catalog-aside {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid rgba(192, 68, 90, 0.12);
-          }
-          .rouge-catalog-aside ul {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-          }
-          .rouge-catalog-aside li a {
-            padding: 0.625rem 0.875rem !important;
-            min-height: 40px;
-            display: inline-flex !important;
-            align-items: center;
-            border-radius: 999px;
-            background: rgba(192, 68, 90, 0.06);
-            font-size: 0.8125rem !important;
-          }
+        .rouge-chips-row::-webkit-scrollbar {
+          display: none;
         }
       `}</style>
     </div>
   )
 }
 
-const asideTitle: React.CSSProperties = {
-  fontFamily: 'var(--font-body)',
-  fontSize: '0.75rem',
-  fontWeight: 600,
-  letterSpacing: '0.2em',
-  textTransform: 'uppercase',
-  color: 'var(--color-primary)',
-  margin: 0,
-  marginBottom: '0.875rem',
-}
-
-function asideLink(active: boolean): React.CSSProperties {
+function chipStyle(active: boolean): React.CSSProperties {
   return {
-    display: 'block',
-    padding: '0.5rem 0',
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '0.375rem',
+    padding: '0.375rem 0.875rem',
+    borderRadius: '999px',
+    border: '1.5px solid var(--color-primary)',
+    background: active ? 'var(--color-primary)' : 'transparent',
+    color: active ? 'white' : 'var(--color-primary)',
     fontFamily: 'var(--font-body)',
-    fontSize: '0.9375rem',
-    color: active ? 'var(--color-primary)' : 'var(--color-fg)',
-    fontWeight: active ? 600 : 400,
+    fontSize: '0.8125rem',
+    fontWeight: 500,
     textDecoration: 'none',
+    whiteSpace: 'nowrap',
+    transition: 'all 180ms ease-out',
+    flexShrink: 0,
   }
-}
-
-const asideCount: React.CSSProperties = {
-  fontSize: '0.75rem',
-  opacity: 0.5,
-  marginLeft: '0.25rem',
 }
