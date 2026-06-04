@@ -1,0 +1,19 @@
+memory.md
+  s_a0f0da580bc243::t_d3303d60af522e 38-83
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "c263750d0482bd142b7ec09dbf58907156d1b927",
+  "prompts": {},
+  "sessions": {
+    "s_a0f0da580bc243": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "04766475-8bb0-4b27-851a-e06a679b71cd",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
