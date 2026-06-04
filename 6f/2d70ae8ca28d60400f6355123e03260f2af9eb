@@ -1,0 +1,22 @@
+app/(admin)/admin/productos/actions.ts
+  s_a0f0da580bc243::t_a12e0fd6a686ed 3,6-12,15
+  s_a0f0da580bc243::t_ff91a5b9f8a48c 31
+app/(admin)/admin/ordenes/actions.ts
+  s_a0f0da580bc243::t_dfba0283a4f112 3,6,9-14,18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "6f2d70ae8ca28d60400f6355123e03260f2af9eb",
+  "prompts": {},
+  "sessions": {
+    "s_a0f0da580bc243": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "04766475-8bb0-4b27-851a-e06a679b71cd",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
