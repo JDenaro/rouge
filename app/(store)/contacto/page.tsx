@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Contacto — Rouge Intime',
-  description: 'WhatsApp, email e Instagram para consultas sobre nuestra lencería artesanal.',
+  description: 'WhatsApp e Instagram para consultas sobre nuestra lencería artesanal.',
 }
 
 export default function ContactoPage() {
@@ -44,7 +44,7 @@ export default function ContactoPage() {
         }}
       >
         Para asesoramiento de talles, consultas sobre tu pedido o pedidos especiales,
-        escribinos por el canal que prefieras.
+        escribinos por WhatsApp o Instagram.
       </p>
 
       <div
@@ -64,18 +64,6 @@ export default function ContactoPage() {
           subtitle="Respondemos en horario comercial"
           value="+54 9 11 5886-1214"
           href="https://wa.me/+541158861214?text=Hola%20Rouge%20Intime!"
-        />
-        <Card
-          icon={
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-              <path d="M22 6l-10 7L2 6" />
-            </svg>
-          }
-          title="Email"
-          subtitle="Consultas o reclamos formales"
-          value="rougeintimelenceria@gmail.com"
-          href="mailto:rougeintimelenceria@gmail.com"
         />
         <Card
           icon={

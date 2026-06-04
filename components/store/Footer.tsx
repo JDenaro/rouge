@@ -80,11 +80,6 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:rougeintimelenceria@gmail.com" style={footerLink}>
-                  rougeintimelenceria@gmail.com
-                </a>
-              </li>
-              <li>
                 <a
                   href="https://www.instagram.com/rougeintime"
                   target="_blank"
