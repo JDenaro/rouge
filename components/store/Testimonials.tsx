@@ -4,18 +4,21 @@ const TESTIMONIALS = [
     detail: 'Talle 100C · Buenos Aires',
     quote:
       'Pedí un set a medida y me sorprendió la calidad de la tela y los detalles. Es la primera vez que un corpiño me queda perfecto.',
+    avatarBg: 'linear-gradient(135deg, #C0445A, #d4697c)',
   },
   {
     name: 'Florencia M.',
     detail: 'Talle 95B · Córdoba',
     quote:
       'El proceso fue clarísimo, la atención por WhatsApp un mimo, y la prenda llegó impecable. Ya estoy planeando el segundo pedido.',
+    avatarBg: 'linear-gradient(135deg, #9B3A6E, #C0445A)',
   },
   {
     name: 'Lucía D.',
     detail: 'Talle 110D · Rosario',
     quote:
       'Tenía dudas con el talle y desde Rouge me ayudaron a medirme paso a paso. La pieza final superó mis expectativas.',
+    avatarBg: 'linear-gradient(135deg, #D97706, #C0445A)',
   },
 ]
 
@@ -110,34 +113,59 @@ export function Testimonials() {
             <footer
               style={{
                 marginTop: 'auto',
-                paddingTop: '0.5rem',
+                paddingTop: '0.75rem',
                 borderTop: '1px solid rgba(192, 68, 90, 0.12)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.875rem',
               }}
             >
-              <p
+              <div
+                aria-hidden
                 style={{
+                  flexShrink: 0,
+                  width: '2.5rem',
+                  height: '2.5rem',
+                  borderRadius: '50%',
+                  background: t.avatarBg,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
                   fontFamily: 'var(--font-heading)',
                   fontSize: '1.0625rem',
-                  fontWeight: 500,
-                  color: 'var(--color-primary)',
-                  margin: 0,
+                  fontWeight: 600,
+                  color: 'white',
+                  letterSpacing: 0,
                 }}
               >
-                {t.name}
-              </p>
-              <p
-                style={{
-                  fontFamily: 'var(--font-body)',
-                  fontSize: '0.75rem',
-                  letterSpacing: '0.04em',
-                  textTransform: 'uppercase',
-                  color: 'var(--color-fg)',
-                  opacity: 0.6,
-                  margin: '0.25rem 0 0',
-                }}
-              >
-                {t.detail}
-              </p>
+                {t.name[0]}
+              </div>
+              <div>
+                <p
+                  style={{
+                    fontFamily: 'var(--font-heading)',
+                    fontSize: '1.0625rem',
+                    fontWeight: 500,
+                    color: 'var(--color-primary)',
+                    margin: 0,
+                  }}
+                >
+                  {t.name}
+                </p>
+                <p
+                  style={{
+                    fontFamily: 'var(--font-body)',
+                    fontSize: '0.75rem',
+                    letterSpacing: '0.04em',
+                    textTransform: 'uppercase',
+                    color: 'var(--color-fg)',
+                    opacity: 0.6,
+                    margin: '0.125rem 0 0',
+                  }}
+                >
+                  {t.detail}
+                </p>
+              </div>
             </footer>
           </article>
         ))}
