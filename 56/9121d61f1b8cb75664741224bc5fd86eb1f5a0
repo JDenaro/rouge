@@ -1,0 +1,20 @@
+app/(store)/contacto/page.tsx
+  s_a0f0da580bc243::t_948bb2d880a306 47
+  s_a0f0da580bc243::t_e63d1dd0ee7e4b 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "569121d61f1b8cb75664741224bc5fd86eb1f5a0",
+  "prompts": {},
+  "sessions": {
+    "s_a0f0da580bc243": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "04766475-8bb0-4b27-851a-e06a679b71cd",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Julian Denaro <julian.denarocurutchet@mercadolibre.com>"
+    }
+  }
+}
